@@ -1,0 +1,29 @@
+.box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.held {
+    border: solid 3px black;
+}
+
+.holder {
+    height: 110px;
+    width: 110px;
+    margin: 10px;
+    border: solid 5px black;
+    background-color: white;
+    display: inline-block;
+}
+
+.hovered {
+    border: dotted 5px black;
+}
+
+.invisible {
+    display: none;
+}

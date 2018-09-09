@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/drop.css">
 
 </head>
 <body>
@@ -11,7 +12,7 @@
 <div class="container">
     <div class="overview">
         <div class="overview--item">
-            <div class="label">Verkaufte Biere in der Bar /sec  </div>
+            <div class="label">Verkaufte Biere in der Bar /sec</div>
             <div class="value" id="umsatz"></div>
         </div>
         <div class="overview--item">
@@ -24,27 +25,33 @@
         </div>
     </div>
     <div class="land" id="land">
-        <div class="land--item" data-id="0"></div>
-        <div class="land--item" data-id="1"></div>
-        <div class="land--item" data-id="2"></div>
-        <div class="land--item" data-id="3"></div>
-        <div class="land--item" data-id="4"></div>
-        <div class="land--item" data-id="5"></div>
-        <div class="land--item" data-id="6"></div>
-        <div class="land--item" data-id="7"></div>
-        <div class="land--item" data-id="8"></div>
-        <div class="land--item" data-id="9"></div>
-        <div class="land--item" data-id="10"></div>
-        <div class="land--item" data-id="11"></div>
+        <div class="land--item holder" data-id="0"></div>
+        <div class="land--item holder" data-id="1"></div>
+        <div class="land--item holder" data-id="2"></div>
+        <div class="land--item holder" data-id="3"></div>
+        <div class="land--item holder" data-id="4"></div>
+        <div class="land--item holder" data-id="5"></div>
+        <div class="land--item holder" data-id="6"></div>
+        <div class="land--item holder" data-id="7"></div>
+        <div class="land--item holder" data-id="8"></div>
+        <div class="land--item holder" data-id="9"></div>
+        <div class="land--item holder" data-id="10"></div>
+        <div class="land--item holder" data-id="11"></div>
     </div>
     <div class="clicker">
-        <div class="beer--clicker">
+        <div class="holder">
+            <div id="brewery" class="box" style="background-image: url('./img/brewery.svg')" draggable="true"></div>
+        </div>
+        <div class="holder">
+            <div id="bar" class="box" style="background-image: url('./img/bar.svg')" draggable="true"></div>
+        </div>
+        <div>
             <img src="./img/beer.svg" alt="beer button" onclick="updateBeer()">
         </div>
     </div>
-
 </div>
 
+<script src="js/drop.js"></script>
 <script src="js/scores.js"></script>
 <script src="js/app.js"></script>
 </body>

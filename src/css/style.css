@@ -2,8 +2,8 @@
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
     border: 1px solid black;
-    max-width: 500px;
-    height: 500px;
+    max-width: 800px;
+    height: 1000px;
 }
 
 .overview {
@@ -20,7 +20,6 @@
 
 .land--item {
     border: 1px solid blue;
-
 }
 
 .clicker {
@@ -28,7 +27,4 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     text-align: center;
-}
-
-.beer--clicker {
 }

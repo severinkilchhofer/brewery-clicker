@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    // Your code to run since DOM is loaded and ready
-
     initLand();
 });
 
@@ -12,7 +10,7 @@ const state = {
         umsatz: 0,
         herstellung: 0,
         lager: {
-            aktuellerStand: 95,
+            aktuellerStand: 0,
             maximalerStand: 0
         }
     },
@@ -35,12 +33,6 @@ const getUmsatz = () => {
     return $('#umsatz');
 };
 
-// const initOverview = () => {
-//     updateLagerbestand(0);
-//     getHerstellung().innerHTML = state.overview.herstellung;
-//     getUmsatz().innerHTML = state.overview.umsatz;
-// };
-
 const updateBeer = () => {
     updateLagerbestand(getAmountInLager() + 1);
 };
@@ -59,17 +51,17 @@ const updateLagerbestand = (newValue) => {
 };
 
 const initLand = () => {
-  updateMaxLagerBestand();
+    updateMaxLagerBestand();
     updateLagerbestand(state.overview.lager.aktuellerStand);
 
     for (const item of $('#land').children) {
-      const dataId = item.dataset.id;
-      const landInState = state.land.find(landItem => landItem.id === +dataId);
-      console.log(dataId, landInState);
-      if(landInState) {
-          item.innerHTML = 'DA IST WAS';
-      }
-  }
+        const dataId = item.dataset.id;
+        const landInState = state.land.find(landItem => landItem.id === +dataId);
+        console.log(dataId, landInState);
+        if (landInState) {
+            item.innerHTML = 'Element Objekt';
+        }
+    }
 };
 
 const updateMaxLagerBestand = () => {
