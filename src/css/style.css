@@ -1,0 +1,34 @@
+.container {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    border: 1px solid black;
+    max-width: 500px;
+    height: 500px;
+}
+
+.overview {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.land {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.land--item {
+    border: 1px solid blue;
+
+}
+
+.clicker {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.beer--clicker {
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="overview">
+        <div class="overview--item">
+            <div class="label">Verkaufte Biere in der Bar /sec  </div>
+            <div class="value" id="umsatz"></div>
+        </div>
+        <div class="overview--item">
+            <div class="label">Herstellung des Biers in Sekunden</div>
+            <div class="value" id="herstellung"></div>
+        </div>
+        <div class="overview--item">
+            <div class="label">Lagerbestand in Flaschen</div>
+            <div class="value" id="lager"></div>
+        </div>
+    </div>
+    <div class="land" id="land">
+        <div class="land--item" data-id="0"></div>
+        <div class="land--item" data-id="1"></div>
+        <div class="land--item" data-id="2"></div>
+        <div class="land--item" data-id="3"></div>
+        <div class="land--item" data-id="4"></div>
+        <div class="land--item" data-id="5"></div>
+        <div class="land--item" data-id="6"></div>
+        <div class="land--item" data-id="7"></div>
+        <div class="land--item" data-id="8"></div>
+        <div class="land--item" data-id="9"></div>
+        <div class="land--item" data-id="10"></div>
+        <div class="land--item" data-id="11"></div>
+    </div>
+    <div class="clicker">
+        <div class="beer--clicker">
+            <img src="./img/beer.svg" alt="beer button" onclick="updateBeer()">
+        </div>
+    </div>
+
+</div>
+
+<script src="js/scores.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>
