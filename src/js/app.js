@@ -16,7 +16,7 @@ const state = {
     },
     land: [
         {id: 5, level: 1, typ: 'brauerei'},
-        {id: 6, level: 1, typ: 'lager'}
+        {id: 11, level: 1, typ: 'lager'}
     ]
 
 };
@@ -35,6 +35,7 @@ const getUmsatz = () => {
 
 const updateBeer = () => {
     updateLagerbestand(getAmountInLager() + 1);
+    initLand();
 };
 
 const getAmountInLager = () => {

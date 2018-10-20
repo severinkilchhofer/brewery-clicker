@@ -1,10 +1,12 @@
 .box {
     height: 100%;
     width: 100%;
-    position: relative;
     top: 5px;
     left: 5px;
     cursor: pointer;
+    background-size: contain;
+    background: no-repeat center;
+    /*position: relative;*/
 }
 
 .held {
@@ -18,6 +20,9 @@
     border: solid 5px black;
     background-color: white;
     display: inline-block;
+    /*TODO make border transparent*/
+    /*border: solid 5px transparent;*/
+    transform: rotate(-45deg);
 }
 
 .hovered {

@@ -25,7 +25,10 @@ class App {
     }
 
     static dragend() {
-        this.className = "box"
+        this.className = "box";
+        console.log($('#land').children);
+        console.log('state.land.id: ', state.land.id);
+
     }
 
     static dragover(e) {
@@ -48,4 +51,4 @@ class App {
 
 }
 
-document.addEventListener("DOMContentLoaded", () => App.init(['#bar', '#brewery']))
+document.addEventListener("DOMContentLoaded", () => App.init(['#shop1', '#lager1', '#brewery1']));

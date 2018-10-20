@@ -9,41 +9,54 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="overview">
-        <div class="overview--item">
-            <div class="label">Verkaufte Biere in der Bar /sec</div>
-            <div class="value" id="umsatz"></div>
+<div class="background-container">
+    <div class="container">
+        <div class="overview">
+            <div class="overview--item">
+                <div class="label">Verkaufte Biere in der Bar /sec</div>
+                <div class="value" id="umsatz"></div>
+            </div>
+            <div class="overview--item">
+                <div class="label">Herstellung des Biers in Sekunden</div>
+                <div class="value" id="herstellung"></div>
+            </div>
+            <div class="overview--item">
+                <div class="label">Lagerbestand in Flaschen</div>
+                <div class="value" id="lager"></div>
+            </div>
         </div>
-        <div class="overview--item">
-            <div class="label">Herstellung des Biers in Sekunden</div>
-            <div class="value" id="herstellung"></div>
+        <div class="land" id="land">
+            <div class="land--item holder" data-id="0"></div>
+            <div class="land--item holder" data-id="1"></div>
+            <div class="land--item holder" data-id="2"></div>
+            <div class="land--item holder" data-id="3"></div>
+            <div class="land--item holder" data-id="4"></div>
+            <div class="land--item holder" data-id="5"></div>
+            <div class="land--item holder" data-id="6"></div>
+            <div class="land--item holder" data-id="7"></div>
+            <div class="land--item holder" data-id="8"></div>
+            <div class="land--item holder" data-id="9"></div>
+            <div class="land--item holder" data-id="10"></div>
+            <div class="land--item holder" data-id="11"></div>
+            <div class="land--item holder" data-id="12"></div>
+            <div class="land--item holder" data-id="13"></div>
+            <div class="land--item holder" data-id="14"></div>
+            <div class="land--item holder" data-id="15"></div>
         </div>
-        <div class="overview--item">
-            <div class="label">Lagerbestand in Flaschen</div>
-            <div class="value" id="lager"></div>
-        </div>
-    </div>
-    <div class="land" id="land">
-        <div class="land--item holder" data-id="0"></div>
-        <div class="land--item holder" data-id="1"></div>
-        <div class="land--item holder" data-id="2"></div>
-        <div class="land--item holder" data-id="3"></div>
-        <div class="land--item holder" data-id="4"></div>
-        <div class="land--item holder" data-id="5"></div>
-        <div class="land--item holder" data-id="6"></div>
-        <div class="land--item holder" data-id="7"></div>
-        <div class="land--item holder" data-id="8"></div>
-        <div class="land--item holder" data-id="9"></div>
-        <div class="land--item holder" data-id="10"></div>
-        <div class="land--item holder" data-id="11"></div>
     </div>
     <div class="clicker">
         <div class="holder">
-            <div id="brewery" class="box" style="background-image: url('./img/brewery.svg')" draggable="true"></div>
+            <div id="shop1" class="box" style="background-image: url('img/haus.svg')" draggable="true"
+                 data-typ="shop" data-level="1" data-id=""></div>
         </div>
         <div class="holder">
-            <div id="bar" class="box" style="background-image: url('./img/bar.svg')" draggable="true"></div>
+            <div id="lager1" class="box" style="background-image: url('./img/hochhaus.svg'); height:100vw;"
+                 draggable="true"
+                 data-typ="lager" data-level="1" data-id=""></div>
+        </div>
+        <div class="holder">
+            <div id="brewery1" class="box" style="background-image: url('./img/brewery/brewery1.svg')" draggable="true"
+                 data-typ="brewery" data-level="1" data-id=""></div>
         </div>
         <div>
             <img src="./img/beer.svg" alt="beer button" onclick="updateBeer()">

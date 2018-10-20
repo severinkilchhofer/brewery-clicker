@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1167px" height="732px" viewBox="0 0 1167 732" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Land</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-108.000000, -238.000000)" fill-rule="nonzero">
+            <g id="Land" transform="translate(108.000000, 238.000000)">
+                <g id="Element-2" transform="translate(0.000000, 22.000000)">
+                    <g id="_Gruppe_3">
+                        <polygon id="_Pfad_" fill="#DA7413" points="1166.50409 350.198149 1166.50409 373.416071 583.672508 709.306676 583.672508 686.01882"></polygon>
+                        <polygon id="_Pfad_" fill="#DA7413" points="1166.50409 338.198149 1166.50409 361.416071 583.672508 697.306676 583.672508 674.01882"></polygon>
+                        <polygon id="_Pfad_2" fill="#FA971B" points="0 349.708615 0 372.926537 583.672508 709.306676 583.672508 686.01882"></polygon>
+                        <polygon id="_Pfad_2" fill="#FA971B" points="0 337.708615 0 360.926537 583.672508 697.306676 583.672508 674.01882"></polygon>
+                        <polygon id="_Pfad_3" fill="#B0CC38" points="582.901659 0.957877042 1166.50409 337.198149 583.672508 673.01882 0 336.708615"></polygon>
+                    </g>
+                </g>
+                <g id="Element-2">
+                    <g id="_Gruppe_3">
+                        <g id="_Gruppe_4" transform="translate(582.808439, 336.848308)" fill="#35664D">
+                            <g id="_Gruppe_5">
+                                <g id="_Gruppe_6">
+                                    <polygon id="_Pfad_" points="583.695651 0.349840861 583.695651 23.5677631 0.864068922 359.458368 0.864068922 336.170512"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_7" transform="translate(0.000000, 336.680804)" fill="#5E9949">
+                            <g id="_Gruppe_8">
+                                <g id="_Gruppe_9">
+                                    <polygon id="_Pfad_2" points="0 0.0278105426 0 23.2457328 583.672508 359.625872 583.672508 336.338016"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_3" fill="#B0CC38" points="582.901659 0.957877042 1166.50409 337.198149 583.672508 673.01882 0 336.708615"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
