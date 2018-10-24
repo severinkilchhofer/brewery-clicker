@@ -1,12 +1,14 @@
 .box {
     height: 100%;
     width: 100%;
-    top: 5px;
-    left: 5px;
+    /*top: 5px;*/
+    /*left: 5px;*/
     cursor: pointer;
     background-size: contain;
     background: no-repeat center;
-    /*position: relative;*/
+    position: relative;
+    border: 1px solid orange !important;
+    /*transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);*/
 }
 
 .held {
@@ -14,15 +16,15 @@
 }
 
 .holder {
-    height: 110px;
-    width: 110px;
-    margin: 10px;
-    border: solid 5px black;
-    background-color: white;
+    height: 200px;
+    width: 200px;
+    /*margin: 10px;*/
+    /*border: solid 5px blue;*/
+    background-color: transparent;
     display: inline-block;
     /*TODO make border transparent*/
     /*border: solid 5px transparent;*/
-    transform: rotate(-45deg);
+    /*transform: rotate(-45deg);*/
 }
 
 .hovered {

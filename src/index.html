@@ -8,7 +8,7 @@
 
 </head>
 <body>
-
+<div id="shop2" style="background-image: url('img/haus.svg'); width: 200px; height: 200px; background-repeat: no-repeat"></div>
 <div class="background-container">
     <div class="container">
         <div class="overview">
@@ -22,40 +22,40 @@
             </div>
             <div class="overview--item">
                 <div class="label">Lagerbestand in Flaschen</div>
-                <div class="value" id="lager"></div>
+                <div class="value" id="lagerCounter"></div>
             </div>
         </div>
-        <div class="land" id="land">
-            <div class="land--item holder" data-id="0"></div>
-            <div class="land--item holder" data-id="1"></div>
-            <div class="land--item holder" data-id="2"></div>
-            <div class="land--item holder" data-id="3"></div>
-            <div class="land--item holder" data-id="4"></div>
-            <div class="land--item holder" data-id="5"></div>
-            <div class="land--item holder" data-id="6"></div>
-            <div class="land--item holder" data-id="7"></div>
-            <div class="land--item holder" data-id="8"></div>
-            <div class="land--item holder" data-id="9"></div>
-            <div class="land--item holder" data-id="10"></div>
-            <div class="land--item holder" data-id="11"></div>
-            <div class="land--item holder" data-id="12"></div>
-            <div class="land--item holder" data-id="13"></div>
-            <div class="land--item holder" data-id="14"></div>
-            <div class="land--item holder" data-id="15"></div>
+        <div class="big" id="land">
+            <div class="field rowA colA holder" data-id="0"></div>
+            <div class="field rowB colA holder" data-id="1"></div>
+            <div class="field rowC colA holder" data-id="2"></div>
+            <div class="field rowD colA holder" data-id="3"></div>
+            <div class="field rowA colB holder" data-id="4"></div>
+            <div class="field rowB colB holder" data-id="5"></div>
+            <div class="field rowC colB holder" data-id="6"></div>
+            <div class="field rowD colB holder" data-id="7"></div>
+            <div class="field rowA colC holder" data-id="8"></div>
+            <div class="field rowB colC holder" data-id="9"></div>
+            <div class="field rowC colC holder" data-id="10"></div>
+            <div class="field rowD colC holder" data-id="11"></div>
+            <div class="field rowA colD holder" data-id="12"></div>
+            <div class="field rowB colD holder" data-id="13"></div>
+            <div class="field rowC colD holder" data-id="14"></div>
+            <div class="field rowD colD holder" data-id="15"></div>
         </div>
     </div>
     <div class="clicker">
         <div class="holder">
-            <div id="shop1" class="box" style="background-image: url('img/haus.svg')" draggable="true"
+            <div id="lager" class="box" style="background-image: url('img/haus.svg');" draggable="true"
+                 data-typ="lager" data-level="2" data-id=""></div>
+        </div>
+        <div class="holder">
+            <div id="shop" class="box" style="background-image: url('./img/hochhaus.svg');"
+                 draggable="true"
                  data-typ="shop" data-level="1" data-id=""></div>
         </div>
         <div class="holder">
-            <div id="lager1" class="box" style="background-image: url('./img/hochhaus.svg'); height:100vw;"
-                 draggable="true"
-                 data-typ="lager" data-level="1" data-id=""></div>
-        </div>
-        <div class="holder">
-            <div id="brewery1" class="box" style="background-image: url('./img/brewery/brewery1.svg')" draggable="true"
+            <div id="brewery" class="box" style="background-image: url('./img/brewery/brewery1.svg');" draggable="true"
                  data-typ="brewery" data-level="1" data-id=""></div>
         </div>
         <div>

@@ -22,7 +22,7 @@ const state = {
 };
 
 const getLager = () => {
-    return $('#lager');
+    return $('#lagerCounter');
 };
 
 const getHerstellung = () => {
