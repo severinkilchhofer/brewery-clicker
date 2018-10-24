@@ -53,10 +53,14 @@ class App {
 
         state.land.push({id: +this.dataset.id, level: +App.currentBox.dataset.level, typ: App.currentBox.dataset.typ});
 
+
         updateMaxLagerBestand();
-        updateLagerbestand(state.overview.lager.aktuellerStand);
+        updateLagerbestand(state.overview.lager.aktuellesLager);
+        updateHerstellungInSec();
+        updateHerstellung(state.overview.herstellung.aktuelleHerstellung);
+        setHerstellungInGange();
     }
 
 }
 
-document.addEventListener("DOMContentLoaded", () => App.init(['#shop', '#lager', '#brewery']));
+document.addEventListener("DOMContentLoaded", () => App.init(['#shop', '#lager', '#brauerei']));

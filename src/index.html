@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/drop.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
 </head>
 <body>
-<div style="background-image: url('img/haus.svg'); width: 200px; height: 200px; background-repeat: no-repeat"></div>
 <div class="background-container">
     <div class="container">
         <div class="overview">
             <div class="overview--item">
-                <div class="label">Verkaufte Biere in der Bar /sec</div>
-                <div class="value" id="umsatz"></div>
+                <div class="label">Umsatz</div>
+                <div class="value" id="umsatzCounter"></div>
             </div>
             <div class="overview--item">
-                <div class="label">Herstellung des Biers in Sekunden</div>
-                <div class="value" id="herstellung"></div>
+                <div class="label">Herstellung</div>
+                <div class="value" id="herstellungCounter"></div>
             </div>
             <div class="overview--item">
-                <div class="label">Lagerbestand in Flaschen</div>
+                <div class="label">Lagerbestand</div>
                 <div class="value" id="lagerCounter"></div>
             </div>
         </div>
@@ -46,17 +46,31 @@
     </div>
     <div class="clicker">
         <div class="holder">
-            <div id="lager" class="box" style="background-image: url('img/haus.svg');" draggable="true"
-                 data-typ="lager" data-level="2" data-id=""></div>
-        </div>
-        <div class="holder">
-            <div id="shop" class="box" style="background-image: url('./img/hochhaus.svg');"
+            <div id="lager"
+                 class="box"
+                 style="background-image: url('img/haus.svg');"
                  draggable="true"
-                 data-typ="shop" data-level="1" data-id=""></div>
+                 data-typ="lager"
+                 data-level="2"
+                 data-id=""></div>
         </div>
         <div class="holder">
-            <div id="brewery" class="box" style="background-image: url('./img/brewery/brewery1.svg');" draggable="true"
-                 data-typ="brewery" data-level="1" data-id=""></div>
+            <div id="shop"
+                 class="box"
+                 style="background-image: url('./img/hochhaus.svg');"
+                 draggable="true"
+                 data-typ="shop"
+                 data-level="1"
+                 data-id=""></div>
+        </div>
+        <div class="holder">
+            <div id="brauerei"
+                 class="box"
+                 style="background-image: url('./img/brauerei.svg');"
+                 draggable="true"
+                 data-typ="brauerei"
+                 data-level="4"
+                 data-id=""></div>
         </div>
         <div>
             <img src="./img/beer.svg" alt="beer button" onclick="updateBeer()">

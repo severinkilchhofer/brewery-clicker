@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 const scores = {
     brauerei: {
+        0: 0,
         1: 1,
         2: 3,
         3: 5,
@@ -11,6 +12,7 @@ const scores = {
         5: 13
     },
     lager: {
+        0: 0,
         1: 100,
         2: 300,
         3: 500,
@@ -18,7 +20,7 @@ const scores = {
         5: 1300
     },
     //Geld
-    bar: {
+    umsatz: {
         1: 10,
         2: 30,
         3: 50,

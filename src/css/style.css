@@ -1,5 +1,6 @@
 body {
     background-color: #5BC0EB;
+    font-family: 'Amatic SC', cursive;
 }
 
 .land {
@@ -11,7 +12,7 @@ body {
     background-color: #B0CC38;
     width: 800px;
     height: 800px;
-    margin: 3rem auto 0 auto;
+    margin: 0 auto 0 auto;
     transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
     transform-style: preserve-3d;
 }
