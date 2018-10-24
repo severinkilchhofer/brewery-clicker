@@ -21,7 +21,7 @@ class App {
     static dragstart() {
         this.className += " held";
         App.currentBox = App.boxes.find(box => box.id === this.id);
-        setTimeout(() => this.className = "invisible", 0)
+        setTimeout(() => this.className = "invisible", 0);
         const currentElement = state.land.findIndex(entry => entry.id == this.parentElement.dataset.id);
         if (currentElement > -1) {
             state.land.splice(currentElement, 1);
@@ -49,21 +49,12 @@ class App {
 
     static drop() {
         this.className += "holder";
-        this.append(App.currentBox)
-        // this.dataset.id = state.land.id;
+        this.append(App.currentBox);
 
         state.land.push({id: +this.dataset.id, level: +App.currentBox.dataset.level, typ: App.currentBox.dataset.typ});
 
-
         updateMaxLagerBestand();
         updateLagerbestand(state.overview.lager.aktuellerStand);
-
-        // this. = state.land.id;
-        // this.dataset.id = state.land.id;
-
-        console.log('this.dataset: ', this.dataset);
-        console.log('state.land: ', state.land);
-
     }
 
 }

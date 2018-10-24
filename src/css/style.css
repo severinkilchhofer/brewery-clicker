@@ -2,44 +2,7 @@ body {
     background-color: #5BC0EB;
 }
 
-/*.background-container {*/
-/*background-size: contain;*/
-/*background: url("../img/land.svg") no-repeat top;*/
-/*border: 2px solid red;*/
-/*margin-top: 150px;*/
-/*}*/
-
-/*.container {*/
-/*margin: auto;*/
-/*display: grid;*/
-/*grid-template-rows: 1fr 3fr 1fr;*/
-/*border: 1px solid black;*/
-/*max-width: 800px;*/
-/*height: 1000px;*/
-/*!*background-color: antiquewhite;*!*/
-/*!*background-size: contain;*!*/
-/*}*/
-
-/*.overview {*/
-/*display: grid;*/
-/*grid-template-columns: 1fr 1fr;*/
-/*grid-template-rows: 1fr 1fr;*/
-/*z-index: 2;*/
-/*}*/
-
 .land {
-    /*grid-template-rows: 1fr 1fr 1fr;*/
-    /*transform: perspective(2000px) rotatex(51deg) rotatey(3deg)rotateZ(41deg);*/
-    /*width: 400px;*/
-    /*transform: translateY(10vh) skew(60deg, -15deg) rotateX(40deg);*/
-    /*transform: rotate(45deg);*/
-    /*display: grid;*/
-    /*grid-template-columns: repeat(4, 1fr);*/
-    /*justify-items: center;*/
-    /*grid-gap: 0;*/
-    /*align-items: center;*/
-    /*grid-auto-rows: 200px;*/
-    /*transform: rotate(45deg);*/
 }
 
 .clicker {
@@ -56,8 +19,6 @@ body {
 .big {
     position: relative;
     background-color: #B0CC38;
-    /*border-bottom: 20px solid orangered;*/
-    /*border-left: 20px solid orangered;*/
     width: 800px;
     height: 800px;
     margin: 3rem auto 0 auto;
@@ -73,24 +34,8 @@ body {
     border-color: red;
     width: 25%;
     height: 25%;
-    /*background-color: rgba(255, 255, 255, 0.5);*/
     font-size: 40px;
     box-sizing: border-box;
-}
-
-.compensate {
-    background-color: rgba(255,0,255,0.3);
-    /* inverse of transform */
-    /* show http://jsfiddle.net/kBWcc/2/ */
-    transform: matrix3d(0.707107, -0.707107, 0, 0, 0.353554, 0.353554, 0.866026, 0, -0.612373, -0.612373, 0.5, 0, 0, 0, 0, 1);
-
-    /* this is just try and error */
-    position: absolute;
-    top: -41.3px;
-    left: -15px;
-    width: 76px;
-    height: 126px;
-
 }
 
 .rowA {
