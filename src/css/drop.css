@@ -5,11 +5,19 @@
     background-size: contain;
     background: no-repeat center;
     position: relative;
-    border: 1px solid orange !important;
+}
+
+.big .box {
+    transform: skewX(25deg) rotateX(-58deg) rotateY(-10deg) rotateZ(33deg);
+    top: -75px;
+    left: 75px;
 }
 
 .held {
-    border: solid 3px black;
+    /*border: solid 3px black;*/
+    height: 200px;
+    width: 200px;
+    background-size: contain;
 }
 
 .holder {
