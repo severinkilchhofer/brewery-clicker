@@ -28,7 +28,7 @@
 }
 
 .hovered {
-    border: dotted 5px black;
+    background-color: #5E9949;
 }
 
 .invisible {
