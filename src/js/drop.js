@@ -21,14 +21,17 @@ class App {
     static dragstart() {
         this.className += " held";
         App.currentBox = App.boxes.find(box => box.id === this.id);
-        setTimeout(() => this.className = "invisible", 0)
+        setTimeout(() => this.className = "invisible", 0);
+        const currentElement = state.land.findIndex(entry => entry.id == this.parentElement.dataset.id);
+        if (currentElement > -1) {
+            state.land.splice(currentElement, 1);
+        }
     }
 
     static dragend() {
         this.className = "box";
         console.log($('#land').children);
-        console.log('state.land.id: ', state.land.id);
-
+        console.log('App.currentBox: ', App.currentBox);
     }
 
     static dragover(e) {
@@ -41,14 +44,23 @@ class App {
     }
 
     static dragleave() {
-        this.className = "holder"
+        this.className += "holder"
     }
 
     static drop() {
-        this.className = "holder";
-        this.append(App.currentBox)
+        this.className += "holder";
+        this.append(App.currentBox);
+
+        state.land.push({id: +this.dataset.id, level: +App.currentBox.dataset.level, typ: App.currentBox.dataset.typ});
+
+
+        updateMaxLagerBestand();
+        updateLagerbestand(state.overview.lager.aktuellesLager);
+        updateHerstellungInSec();
+        updateHerstellung(state.overview.herstellung.aktuelleHerstellung);
+        setHerstellungInGange();
     }
 
 }
 
-document.addEventListener("DOMContentLoaded", () => App.init(['#shop1', '#lager1', '#brewery1']));
+document.addEventListener("DOMContentLoaded", () => App.init(['#shop', '#lager', '#brauerei']));
