@@ -51,16 +51,16 @@ class App {
         this.className += "holder";
         this.append(App.currentBox);
 
-        state.land.push({id: +this.dataset.id, level: +App.currentBox.dataset.level, typ: App.currentBox.dataset.typ});
+        state.land.push({
+            id: +this.dataset.id,
+            typ: App.currentBox.dataset.typ,
+            einwohner: App.currentBox.dataset.einwohner,
+            mieteinnahme: App.currentBox.dataset.mieteinnahme
+        });
 
-
-        updateMaxLagerBestand();
-        updateLagerbestand(state.overview.lager.aktuellesLager);
-        updateHerstellungInSec();
-        updateHerstellung(state.overview.herstellung.aktuelleHerstellung);
-        setHerstellungInGange();
+        updateEinwohner();
     }
 
 }
 
-document.addEventListener("DOMContentLoaded", () => App.init(['#shop', '#lager', '#brauerei']));
+document.addEventListener("DOMContentLoaded", () => App.init(['#cafe', '#brauerei']));

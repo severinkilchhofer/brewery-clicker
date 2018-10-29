@@ -13,16 +13,12 @@
     <div class="container">
         <div class="overview">
             <div class="overview--item">
-                <div class="label">Umsatz</div>
-                <div class="value" id="umsatzCounter"></div>
+                <div class="label">Einwohner</div>
+                <div class="value" id="einwohnerCounter"></div>
             </div>
             <div class="overview--item">
-                <div class="label">Herstellung</div>
-                <div class="value" id="herstellungCounter"></div>
-            </div>
-            <div class="overview--item">
-                <div class="label">Lagerbestand</div>
-                <div class="value" id="lagerCounter"></div>
+                <div class="label">Mieteinnahmen</div>
+                <div class="value" id="mieteinnahmenCounter"></div>
             </div>
         </div>
         <div class="big" id="land">
@@ -46,21 +42,13 @@
     </div>
     <div class="clicker">
         <div class="holder">
-            <div id="lager"
+            <div id="cafe"
                  class="box"
-                 style="background-image: url('img/haus.svg');"
+                 style="background-image: url('img/cafe.svg');"
                  draggable="true"
-                 data-typ="lager"
-                 data-level="2"
-                 data-id=""></div>
-        </div>
-        <div class="holder">
-            <div id="shop"
-                 class="box"
-                 style="background-image: url('./img/hochhaus.svg');"
-                 draggable="true"
-                 data-typ="shop"
-                 data-level="1"
+                 data-typ="cafe"
+                 data-einwohner="20"
+                 data-mieteinnahme="50"
                  data-id=""></div>
         </div>
         <div class="holder">
@@ -69,11 +57,9 @@
                  style="background-image: url('./img/brauerei.svg');"
                  draggable="true"
                  data-typ="brauerei"
-                 data-level="4"
+                 data-einwohner="30"
+                 data-mieteinnahme="100"
                  data-id=""></div>
-        </div>
-        <div>
-            <img src="./img/beer.svg" alt="beer button" onclick="updateBeer()">
         </div>
     </div>
 </div>
