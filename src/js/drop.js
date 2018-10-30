@@ -30,8 +30,6 @@ class App {
 
     static dragend() {
         this.className = "box";
-        console.log($('#land').children);
-        console.log('App.currentBox: ', App.currentBox);
     }
 
     static dragover(e) {
@@ -55,10 +53,11 @@ class App {
             id: +this.dataset.id,
             typ: App.currentBox.dataset.typ,
             einwohner: App.currentBox.dataset.einwohner,
-            mieteinnahme: App.currentBox.dataset.mieteinnahme
+            miete: App.currentBox.dataset.miete
         });
 
         updateEinwohner();
+        updateMonatsmiete();
     }
 
 }

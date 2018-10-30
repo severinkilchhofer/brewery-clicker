@@ -6,13 +6,17 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const state = {
+    interval: {
+      currentInterval: false,
+    },
     overview: {
         mieteinnahmen: 0,
+        geld: 0,
         einwohner: 0,
     },
     land: [
-        {id: 0, typ: 'cafe', einwohner: 0, mieteinnahme: 0},
-        {id: 1, typ: 'brauerei', einwohner: 0, mieteinnahme: 0}
+        {id: 0, typ: 'cafe', einwohner: 0, miete: 0},
+        {id: 1, typ: 'brauerei', einwohner: 0, miete: 0}
     ]
 };
 
@@ -24,8 +28,24 @@ const getEinwohner = () => {
     return $('#einwohnerCounter');
 };
 
-const updateMieteinnahmen = () => {
-    getMieteinnahmen().innerHTML = `${state.overview.mieteinnahmen}$`;
+const updateGesamtesGeld = () => {
+    if (!state.interval.currentInterval) {
+        setInterval(function () {
+            let geld = state.overview.geld;
+            geld += state.overview.mieteinnahmen;
+            state.overview.geld = geld;
+            state.interval.currentInterval = true;
+            getMieteinnahmen().innerHTML = `${geld}$`;
+        }, 5000);
+    }
+};
+
+const updateMonatsmiete = () => {
+    const geld = state.land.map(item => +item.miete);
+    const add = (a, b) => a + b;
+    state.overview.mieteinnahmen = geld.reduce(add);
+
+    updateGesamtesGeld();
 };
 
 const updateEinwohner = () => {
@@ -37,12 +57,6 @@ const updateEinwohner = () => {
 
 
 const initLand = () => {
-    updateMieteinnahmen();
     updateEinwohner();
-
-    for (const item of $('#land').children) {
-        const dataId = item.dataset.id;
-        const landInState = state.land.find(landItem => landItem.id === +dataId);
-        console.log(dataId, landInState);
-    }
+    updateMonatsmiete();
 };
