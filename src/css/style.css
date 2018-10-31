@@ -1,6 +1,12 @@
 body {
     background-color: #5BC0EB;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h2 {
+    font-weight: 400;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .land {
