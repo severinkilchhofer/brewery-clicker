@@ -53,7 +53,8 @@ class App {
             id: +this.dataset.id,
             typ: App.currentBox.dataset.typ,
             einwohner: App.currentBox.dataset.einwohner,
-            miete: App.currentBox.dataset.miete
+            miete: App.currentBox.dataset.miete,
+            kosten: App.currentBox.dataset.kosten
         });
 
         updateEinwohner();

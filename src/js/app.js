@@ -7,7 +7,7 @@ const $$ = document.querySelectorAll.bind(document);
 
 const state = {
     interval: {
-      currentInterval: false,
+        currentInterval: false,
     },
     overview: {
         mieteinnahmen: 0,
@@ -15,8 +15,8 @@ const state = {
         einwohner: 0,
     },
     land: [
-        {id: 0, typ: 'cafe', einwohner: 0, miete: 0},
-        {id: 1, typ: 'brauerei', einwohner: 0, miete: 0}
+        {id: 0, typ: 'cafe', einwohner: 0, miete: 0, kosten: 0},
+        {id: 1, typ: 'brauerei', einwohner: 0, miete: 0, kosten: 0}
     ]
 };
 
@@ -35,8 +35,10 @@ const updateGesamtesGeld = () => {
             geld += state.overview.mieteinnahmen;
             state.overview.geld = geld;
             state.interval.currentInterval = true;
+            updateGebaudeCards();
             getMieteinnahmen().innerHTML = `${geld}$`;
-        }, 5000);
+        }, 1000);
+        // }, 5000);
     }
 };
 
@@ -55,8 +57,20 @@ const updateEinwohner = () => {
     getEinwohner().innerHTML = `${state.overview.einwohner}`;
 };
 
+const updateGebaudeCards = () => {
+    for (const item of $('#gebaudeSammlung').children) {
+        const gebaudeKosten = +item.dataset.preis;
+
+        if (state.overview.geld < gebaudeKosten) {
+            item.classList.add('disabled')
+        } else {
+            item.classList.remove('disabled')
+        }
+    }
+};
 
 const initLand = () => {
     updateEinwohner();
     updateMonatsmiete();
+    updateGebaudeCards();
 };
