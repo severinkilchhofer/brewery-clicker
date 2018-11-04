@@ -28,6 +28,16 @@ const getEinwohner = () => {
     return $('#einwohnerCounter');
 };
 
+const updateKostenAbzug = () => {
+    const lastAddedGebaude =  state.land.map(item => +item.kosten);
+    const kostenLastAdded = lastAddedGebaude.pop();
+
+    let geld = state.overview.geld;
+    geld -= kostenLastAdded;
+    state.overview.geld = geld;
+    getMieteinnahmen().innerHTML = `${geld}$`;
+};
+
 const updateGesamtesGeld = () => {
     if (!state.interval.currentInterval) {
         setInterval(function () {
@@ -37,12 +47,13 @@ const updateGesamtesGeld = () => {
             state.interval.currentInterval = true;
             updateGebaudeCards();
             getMieteinnahmen().innerHTML = `${geld}$`;
-        }, 1000);
+        }, 3000);
         // }, 5000);
     }
 };
 
 const updateMonatsmiete = () => {
+    updateKostenAbzug();
     const geld = state.land.map(item => +item.miete);
     const add = (a, b) => a + b;
     state.overview.mieteinnahmen = geld.reduce(add);

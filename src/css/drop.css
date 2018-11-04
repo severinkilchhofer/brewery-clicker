@@ -28,7 +28,11 @@
 }
 
 .disabled {
- color: red;
+    background-color: gray !important;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.3;
+    /*color: red;*/
 }
 
 .hovered {

@@ -63,4 +63,4 @@ class App {
 
 }
 
-document.addEventListener("DOMContentLoaded", () => App.init(['#cafe', '#brauerei']));
+document.addEventListener("DOMContentLoaded", () => App.init(['#behoerde', '#cafe', '#brauerei']));
