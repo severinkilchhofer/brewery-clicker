@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     initLand();
+    //TODO add intro Modal
+    // modal.style.display = "block";
 });
 
 const $ = document.querySelector.bind(document);
@@ -8,6 +10,7 @@ const $$ = document.querySelectorAll.bind(document);
 const state = {
     interval: {
         currentInterval: false,
+        counterInterval: false,
     },
     overview: {
         mieteinnahmen: 0,
@@ -15,9 +18,13 @@ const state = {
         einwohner: 0,
     },
     land: [
-        {id: 0, typ: 'cafe', einwohner: 0, miete: 0, kosten: 0},
-        {id: 1, typ: 'brauerei', einwohner: 0, miete: 0, kosten: 0}
-    ]
+        {id: 0, typ: 'cafe', einwohner: 0, miete: 0, kosten: 0}
+    ],
+    gamePlay: {
+        gebaudeAufLand: 0,
+        finished: false,
+    }
+
 };
 
 const getMieteinnahmen = () => {
@@ -47,7 +54,11 @@ const updateGesamtesGeld = () => {
             state.interval.currentInterval = true;
             updateGebaudeCards();
             getMieteinnahmen().innerHTML = `${geld}$`;
-        }, 3000);
+            if (!state.interval.counterInterval) {
+                monthCountup();
+                state.interval.counterInterval = true;
+            }
+        }, 5000);
         // }, 5000);
     }
 };
@@ -80,8 +91,16 @@ const updateGebaudeCards = () => {
     }
 };
 
+const checkIsFinished = () => {
+    state.gamePlay.gebaudeAufLand = state.land.length;
+    if (state.gamePlay.gebaudeAufLand === 17) {
+        state.gamePlay.finished = true;
+        alert('feeertig!!')
+    }
+};
+
 const initLand = () => {
     updateEinwohner();
-    updateMonatsmiete();
+    // updateMonatsmiete();
     updateGebaudeCards();
 };

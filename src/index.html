@@ -6,11 +6,24 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/drop.css">
+    <link rel="stylesheet" type="text/css" href="css/monthCounter.css">
+    <link rel="stylesheet" type="text/css" href="css/introModal.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,900" rel="stylesheet">
 </head>
 <body>
 <div class="background-container">
     <div class="container">
+        <div id="introModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Hallo Lieber Spielefreund</h1>
+                <h2>So schnell wies geht so viele Einwohner wie möglich!</h2>
+                <p>In meinem Spiel geht es darum, deine eigene Stadt aufzubauen. Versuche so viele Einwohner wie möglich
+                    zu erhalten indem du Gebäude auf die Spielfläche ziehst.</p>
+                <p>Wichtig: Wenn du alle 16 Felder besetzt hast, ist das Spiel zu Ende.</p>
+            </div>
+        </div>
+
         <div class="overview">
             <div class="overview--item">
                 <div class="label">Einwohner</div>
@@ -19,6 +32,16 @@
             <div class="overview--item">
                 <div class="label">Mieteinnahmen</div>
                 <div class="value" id="mieteinnahmenCounter"></div>
+            </div>
+            <div class="counter-title">
+                <div>Tag</div>
+                <div>Monat</div>
+                <div>Jahr</div>
+            </div>
+            <div class="counter">
+                <div>1.</div>
+                <div id="month">1.</div>
+                <div id="year">2018</div>
             </div>
         </div>
         <div class="big" id="land">
@@ -69,18 +92,18 @@
             <div class="gebaudePreis">
                 100$
             </div>
-        <div class="holder">
-            <div id="cafe"
-                 class="box"
-                 style="background-image: url('img/cafe.svg');"
-                 draggable="true"
-                 data-typ="cafe"
-                 data-einwohner="20"
-                 data-miete="50"
-                 data-kosten="100"
-                 data-id="">
+            <div class="holder">
+                <div id="cafe"
+                     class="box"
+                     style="background-image: url('img/cafe.svg');"
+                     draggable="true"
+                     data-typ="cafe"
+                     data-einwohner="20"
+                     data-miete="50"
+                     data-kosten="100"
+                     data-id="">
+                </div>
             </div>
-        </div>
             <div class="gebaudeBeschreibung">
                 <h1>Cafe</h1>
                 <h2>Einwohner: +20</h2>
@@ -93,17 +116,17 @@
             <div class="gebaudePreis">
                 400$
             </div>
-        <div class="holder">
-            <div id="brauerei"
-                 class="box"
-                 style="background-image: url('./img/brauerei.svg');"
-                 draggable="true"
-                 data-typ="brauerei"
-                 data-einwohner="30"
-                 data-miete="100"
-                 data-kosten="400"
-                 data-id=""></div>
-        </div>
+            <div class="holder">
+                <div id="brauerei"
+                     class="box"
+                     style="background-image: url('./img/brauerei.svg');"
+                     draggable="true"
+                     data-typ="brauerei"
+                     data-einwohner="30"
+                     data-miete="100"
+                     data-kosten="400"
+                     data-id=""></div>
+            </div>
             <div class="gebaudeBeschreibung">
                 <h1>Brauerei</h1>
                 <h2>Einwohner: +30</h2>
@@ -113,9 +136,11 @@
     </div>
 </div>
 
+<script src="js/app.js"></script>
+<script src="js/monthCounter.js"></script>
+<script src="js/introModal.js"></script>
 <script src="js/drop.js"></script>
 <script src="js/scores.js"></script>
-<script src="js/app.js"></script>
 </body>
 
 </html>

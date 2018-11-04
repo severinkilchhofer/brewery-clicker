@@ -59,6 +59,7 @@ class App {
 
         updateEinwohner();
         updateMonatsmiete();
+        checkIsFinished();
     }
 
 }
