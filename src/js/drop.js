@@ -64,4 +64,4 @@ class App {
 
 }
 
-document.addEventListener("DOMContentLoaded", () => App.init(['#behoerde', '#cafe', '#brauerei']));
+document.addEventListener("DOMContentLoaded", () => App.init(['#behoerde', '#cafe', '#wohnhaus', '#tanteemmaladen', '#apotheke', '#arztpraxis', '#buerogebaude', '#club', '#spital', '#baeckerei', '#altersheim', '#tankstelle', '#coiffeur', '#gefaengnis', '#brauerei', '#bank', '#blumenladen', '#startupbuero', '#versicherung', '#kino']));

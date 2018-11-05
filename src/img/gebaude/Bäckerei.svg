@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="103px" height="200px" viewBox="0 0 103 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Bäckerei</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="51.9263336%" y1="55.8327219%" x2="48.0736664%" y2="44.2406456%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#E8E8E9" stop-opacity="0.34" offset="27%"></stop>
+            <stop stop-color="#D4D6D7" stop-opacity="0.63" offset="51%"></stop>
+            <stop stop-color="#C7C8CA" stop-opacity="0.83" offset="73%"></stop>
+            <stop stop-color="#BEC0C2" stop-opacity="0.95" offset="90%"></stop>
+            <stop stop-color="#BBBDBF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#F7F7F7" offset="0%"></stop>
+            <stop stop-color="#F6F6F6" stop-opacity="0.99" offset="0%"></stop>
+            <stop stop-color="#EAEAEF" stop-opacity="0.8" offset="4%"></stop>
+            <stop stop-color="#DFDFE9" stop-opacity="0.63" offset="9%"></stop>
+            <stop stop-color="#D5D5E3" stop-opacity="0.48" offset="14%"></stop>
+            <stop stop-color="#CDCDDE" stop-opacity="0.35" offset="19%"></stop>
+            <stop stop-color="#C6C6DA" stop-opacity="0.24" offset="25%"></stop>
+            <stop stop-color="#C0C0D7" stop-opacity="0.15" offset="32%"></stop>
+            <stop stop-color="#BBBBD4" stop-opacity="0.08" offset="39%"></stop>
+            <stop stop-color="#B8B8D2" stop-opacity="0.04" offset="49%"></stop>
+            <stop stop-color="#B6B6D1" stop-opacity="0.01" offset="62%"></stop>
+            <stop stop-color="#B6B6D1" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50.0813008%" x2="100%" y2="50.0813008%" id="linearGradient-3">
+            <stop stop-color="#F7F7F7" offset="0%"></stop>
+            <stop stop-color="#F6F6F6" stop-opacity="0.99" offset="0%"></stop>
+            <stop stop-color="#EAEAEF" stop-opacity="0.8" offset="4%"></stop>
+            <stop stop-color="#DFDFE9" stop-opacity="0.63" offset="9%"></stop>
+            <stop stop-color="#D5D5E3" stop-opacity="0.48" offset="14%"></stop>
+            <stop stop-color="#CDCDDE" stop-opacity="0.35" offset="19%"></stop>
+            <stop stop-color="#C6C6DA" stop-opacity="0.24" offset="25%"></stop>
+            <stop stop-color="#C0C0D7" stop-opacity="0.15" offset="32%"></stop>
+            <stop stop-color="#BBBBD4" stop-opacity="0.08" offset="39%"></stop>
+            <stop stop-color="#B8B8D2" stop-opacity="0.04" offset="49%"></stop>
+            <stop stop-color="#B6B6D1" stop-opacity="0.01" offset="62%"></stop>
+            <stop stop-color="#B6B6D1" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="59.7833935%" y1="88.0952381%" x2="40.2166065%" y2="22.5490196%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#E8E8E9" stop-opacity="0.34" offset="27%"></stop>
+            <stop stop-color="#D4D6D7" stop-opacity="0.63" offset="51%"></stop>
+            <stop stop-color="#C7C8CA" stop-opacity="0.83" offset="73%"></stop>
+            <stop stop-color="#BEC0C2" stop-opacity="0.95" offset="90%"></stop>
+            <stop stop-color="#BBBDBF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="54.7803618%" y1="71.7917676%" x2="44.250646%" y2="37.5302663%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#F4F4F4" stop-opacity="0.13" offset="7%"></stop>
+            <stop stop-color="#DCDDDE" stop-opacity="0.39" offset="23%"></stop>
+            <stop stop-color="#C9CACC" stop-opacity="0.61" offset="39%"></stop>
+            <stop stop-color="#B9BBBD" stop-opacity="0.78" offset="54%"></stop>
+            <stop stop-color="#AFB0B3" stop-opacity="0.9" offset="70%"></stop>
+            <stop stop-color="#A8AAAD" stop-opacity="0.98" offset="85%"></stop>
+            <stop stop-color="#A6A8AB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Bäckerei" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Element-25-Copy" transform="translate(0.000000, 31.000000)" fill-rule="nonzero">
+            <g id="_Gruppe_3" transform="translate(3.000000, 0.000000)">
+                <g id="_Gruppe_4" transform="translate(56.000000, 75.000000)">
+                    <g id="_Gruppe_5" transform="translate(38.000000, 22.000000)" fill="#B6B6D1">
+                        <g id="_Gruppe_6">
+                            <g id="_Gruppe_7">
+                                <polygon id="_Pfad_" points="2.91 0.3 2.91 3.53 0.36 4.99 0.36 1.75"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_8" transform="translate(0.000000, 1.000000)" fill="#D2D2DB">
+                        <g id="_Gruppe_9">
+                            <g id="_Gruppe_10">
+                                <polygon id="_Pfad_2" points="0.6 0.94 0.6 4.18 38.36 25.99 38.36 22.75"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <polygon id="_Pfad_3" fill="#616170" points="0.6 1.94 3.13 0.48 40.91 22.3 38.36 23.75"></polygon>
+                </g>
+                <g id="_Gruppe_11" transform="translate(0.000000, 74.000000)">
+                    <g id="_Gruppe_12" transform="translate(0.000000, 32.000000)" fill="#40404A">
+                        <g id="_Gruppe_13">
+                            <g id="_Gruppe_14">
+                                <polygon id="_Pfad_4" points="0.64 0.6 0.64 3.83 3.19 5.29 3.19 2.05"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_15" transform="translate(3.000000, 1.000000)" fill="#D2D2DB">
+                        <g id="_Gruppe_16">
+                            <g id="_Gruppe_17">
+                                <polygon id="_Pfad_5" points="56.35 0.61 56.35 3.85 0.19 36.29 0.19 33.05"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <polygon id="_Pfad_6" fill="#616170" points="59.35 1.61 56.82 0.15 0.64 32.6 3.19 34.05"></polygon>
+                </g>
+                <g id="_Gruppe_18" transform="translate(5.000000, 9.000000)">
+                    <g id="_Gruppe_19" transform="translate(38.000000, 22.000000)" fill="#2D4151">
+                        <g id="_Gruppe_20">
+                            <g id="_Gruppe_21">
+                                <polygon id="_Pfad_7" points="51.36 0.4 51.36 107.57 0.25 137.1 0.25 29.91"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_22" transform="translate(0.000000, 30.000000)" fill="#566A8F">
+                        <g id="_Gruppe_23">
+                            <g id="_Gruppe_24">
+                                <polygon id="_Pfad_8" points="38.25 21.91 38.25 129.1 14.09 115.14 14.09 113.52 5.59 108.6 4.19 109.41 4.19 109.41 4.19 109.41 0.7 107.4 0.7 0.23"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <polygon id="_Pfad_9" fill="#292930" points="0.7 30.22 51.83 0.73 89.36 22.4 38.25 51.91"></polygon>
+                </g>
+                <g id="_Gruppe_25" transform="translate(1.000000, 0.000000)">
+                    <polygon id="_Pfad_10" fill="#40404A" points="53.42 7.62 89.14 28.25 89.14 24.49 53.42 3.86"></polygon>
+                    <polygon id="_Pfad_11" fill="#292930" points="53.42 3.86 53.42 7.62 3.31 36.55 3.31 32.79"></polygon>
+                    <g id="_Gruppe_26" transform="translate(42.000000, 24.000000)" fill="#292930">
+                        <g id="_Gruppe_27">
+                            <g id="_Gruppe_28">
+                                <polygon id="_Pfad_12" points="53.51 0.32 53.51 6.15 0.25 36.91 0.25 31.07"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_29" transform="translate(0.000000, 30.000000)" fill="#40404A">
+                        <g id="_Gruppe_30">
+                            <g id="_Gruppe_31">
+                                <polygon id="_Pfad_13" points="0.12 0.74 0.12 6.57 42.25 30.91 42.25 25.07"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <path d="M53.39,0 L0.12,30.74 L42.25,55.07 L95.51,24.32 L53.39,0 Z M6.57,30.91 L53.42,3.91 L89.14,24.49 L42.29,51.54 L6.57,30.91 Z" id="_Zusammengesetzter_Pfad_" fill="#616170"></path>
+                    <polygon id="_Pfad_14" fill="#727A71" points="53.42 7.62 9.82 32.79 42.29 51.54 85.89 26.37"></polygon>
+                </g>
+                <polygon id="_Pfad_15" fill="#7F877D" points="54.42 11.42 17.4 32.8 43.29 47.74 80.31 26.36"></polygon>
+                <polygon id="_Pfad_16" fill="url(#linearGradient-1)" style="mix-blend-mode: multiply;" points="10.82 32.79 54.42 7.62 58.06 9.73 14.49 34.88"></polygon>
+                <g id="_Gruppe_32" opacity="0.6" style="mix-blend-mode: multiply;" transform="translate(43.000000, 52.000000)" fill="url(#linearGradient-2)">
+                    <g id="_Gruppe_33">
+                        <g id="_Gruppe_34">
+                            <polygon id="_Pfad_17" points="5.4 0.15 5.4 5.98 0.25 8.91 0.25 3.07"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <g id="_Gruppe_35" transform="translate(3.000000, 97.000000)">
+                    <g id="_Gruppe_36" transform="translate(0.000000, 9.000000)">
+                        <g id="_Gruppe_37" transform="translate(37.000000, 22.000000)" fill="#B6B6D1">
+                            <g id="_Gruppe_38">
+                                <g id="_Gruppe_39">
+                                    <polygon id="_Pfad_18" points="3.25 0.27 3.25 3.51 0.71 4.97 0.71 1.73"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_40" transform="translate(0.000000, 2.000000)" fill="#40404A">
+                            <g id="_Gruppe_41">
+                                <g id="_Gruppe_42">
+                                    <polygon id="_Pfad_19" points="0.17 0.05 0.17 3.28 37.71 24.97 37.71 21.73"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_20" fill="#616170" points="0.17 2.05 2.7 0.58 40.25 22.27 37.71 23.73"></polygon>
+                    </g>
+                    <g id="_Gruppe_43" transform="translate(37.000000, 0.000000)">
+                        <g id="_Gruppe_44" transform="translate(0.000000, 32.000000)" fill="#40404A">
+                            <g id="_Gruppe_45">
+                                <g id="_Gruppe_46">
+                                    <polygon id="_Pfad_21" points="0.7 0.73 0.7 3.96 3.25 5.42 3.25 2.18"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_47" transform="translate(3.000000, 1.000000)" fill="#292930">
+                            <g id="_Gruppe_48">
+                                <g id="_Gruppe_49">
+                                    <polygon id="_Pfad_22" points="56.41 0.74 56.41 3.98 0.25 36.42 0.25 33.18"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_23" fill="#616170" points="59.41 1.74 56.88 0.28 0.7 32.73 3.25 34.18"></polygon>
+                    </g>
+                </g>
+                <g id="_Gruppe_50" opacity="0.6" style="mix-blend-mode: multiply;" transform="translate(43.000000, 128.000000)" fill="url(#linearGradient-3)">
+                    <g id="_Gruppe_51">
+                        <g id="_Gruppe_52">
+                            <polygon id="_Pfad_24" points="5.4 0.1 5.4 3.32 0.25 6.25 0.25 3.02"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <polygon id="_Pfad_25" fill="#E3E3ED" points="5.7 112.74 43.25 134.25 43.25 168.1 19.09 154.14 19.09 152.52 10.59 147.6 9.19 148.41 5.7 146.4"></polygon>
+                <polygon id="_Pfad_26" fill="#CFCFE3" points="43.25 134.25 94.36 105.04 94.36 138.57 43.25 168.1"></polygon>
+                <polygon id="_Pfad_39" fill="#FAC370" points="11.91 123.29 11.91 119.69 6.47 116.58 6.47 120.15"></polygon>
+                <polygon id="_Pfad_40" fill="#FAC370" points="23.4 138.44 23.4 134.84 17.96 131.73 17.96 135.29"></polygon>
+                <polygon id="_Pfad_42" fill="#E68A1B" points="30.44 133.08 30.44 129.48 24.99 126.37 24.99 129.94"></polygon>
+                <polygon id="_Pfad_43" fill="#FAC370" points="36.84 150.81 36.84 147.2 31.4 144.09 31.4 147.66"></polygon>
+                <g id="_Gruppe_53" transform="translate(22.000000, 128.000000)">
+                    <g id="_Gruppe_54">
+                        <g id="_Gruppe_55">
+                            <g id="_Gruppe_56">
+                                <g id="_Gruppe_57" fill="#D8E0E8">
+                                    <g id="_Gruppe_58">
+                                        <g id="_Gruppe_59">
+                                            <polygon id="_Pfad_44" points="0.18 0.14 0.18 16.65 18.03 26.96 18.03 10.45"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="_Gruppe_60" fill="#292930">
+                                    <g id="_Gruppe_61">
+                                        <g id="_Gruppe_62">
+                                            <polygon id="_Pfad_45" points="1.57 0.95 1.57 15.84 0.18 16.65 0.18 0.14"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <polygon id="_Pfad_46" fill="#616170" points="0.18 16.65 1.57 15.84 18.03 25.34 18.03 26.96"></polygon>
+                </g>
+            </g>
+            <g id="_Gruppe_63" transform="translate(69.000000, 41.000000)">
+                <g id="_Gruppe_64" transform="translate(0.000000, 8.000000)">
+                    <g id="_Gruppe_65">
+                        <g id="_Gruppe_66" transform="translate(2.000000, 1.000000)" fill="#40404A">
+                            <g id="_Gruppe_67">
+                                <g id="_Gruppe_68">
+                                    <polygon id="_Pfad_47" points="6.73 0.31 6.73 16.83 0.33 20.53 0.33 4.01"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_69" transform="translate(0.000000, 4.000000)" fill="#292930">
+                            <g id="_Gruppe_70">
+                                <g id="_Gruppe_71">
+                                    <polygon id="_Pfad_48" points="0.93 0.21 0.93 16.72 2.33 17.53 2.33 1.01"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_49" fill="#616170" points="0.93 4.21 7.33 0.51 8.73 1.31 2.33 5.01"></polygon>
+                    </g>
+                    <g id="_Gruppe_72" transform="translate(3.000000, 2.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_73">
+                            <g id="_Gruppe_74">
+                                <polygon id="_Pfad_50" points="4.91 0.76 4.91 7.43 0.15 10.17 0.15 3.51"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_75" transform="translate(3.000000, 10.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_76">
+                            <g id="_Gruppe_77">
+                                <polygon id="_Pfad_51" points="4.91 0.67 4.91 7.33 0.15 10.08 0.15 3.41"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="_Gruppe_78" transform="translate(15.000000, 0.000000)">
+                    <g id="_Gruppe_79">
+                        <g id="_Gruppe_80" transform="translate(1.000000, 1.000000)" fill="#40404A">
+                            <g id="_Gruppe_81">
+                                <g id="_Gruppe_82">
+                                    <polygon id="_Pfad_52" points="6.87 0.15 6.87 16.67 0.46 20.36 0.46 3.85"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_83" transform="translate(0.000000, 4.000000)" fill="#292930">
+                            <g id="_Gruppe_84">
+                                <g id="_Gruppe_85">
+                                    <polygon id="_Pfad_53" points="0.06 0.05 0.06 16.55 1.46 17.36 1.46 0.85"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_54" fill="#616170" points="0.06 4.05 6.47 0.35 7.87 1.15 1.46 4.85"></polygon>
+                    </g>
+                    <g id="_Gruppe_86" transform="translate(2.000000, 2.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_87">
+                            <g id="_Gruppe_88">
+                                <polygon id="_Pfad_55" points="5.04 0.6 5.04 7.27 0.29 10.01 0.29 3.35"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_89" transform="translate(2.000000, 10.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_90">
+                            <g id="_Gruppe_91">
+                                <polygon id="_Pfad_56" points="5.04 0.51 5.04 7.17 0.29 9.92 0.29 3.25"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="_Gruppe_92" transform="translate(55.000000, 57.000000)">
+                <g id="_Gruppe_93">
+                    <g id="_Gruppe_94">
+                        <g id="_Gruppe_95" transform="translate(2.000000, 1.000000)" fill="#40404A">
+                            <g id="_Gruppe_96">
+                                <g id="_Gruppe_97">
+                                    <polygon id="_Pfad_57" points="6.56 0.49 6.56 17.01 0.16 20.7 0.16 4.19"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_98" transform="translate(0.000000, 4.000000)" fill="#292930">
+                            <g id="_Gruppe_99">
+                                <g id="_Gruppe_100">
+                                    <polygon id="_Pfad_58" points="0.76 0.39 0.76 16.89 2.16 17.7 2.16 1.19"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_59" fill="#616170" points="0.76 4.39 7.17 0.69 8.56 1.49 2.16 5.19"></polygon>
+                    </g>
+                    <g id="_Gruppe_101" transform="translate(2.000000, 2.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_102">
+                            <g id="_Gruppe_103">
+                                <polygon id="_Pfad_60" points="5.74 0.94 5.74 7.61 0.98 10.35 0.98 3.69"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_104" transform="translate(2.000000, 10.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_105">
+                            <g id="_Gruppe_106">
+                                <polygon id="_Pfad_61" points="5.74 0.85 5.74 7.51 0.98 10.26 0.98 3.59"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="_Gruppe_107" transform="translate(69.000000, 68.000000)">
+                <g id="_Gruppe_108" transform="translate(0.000000, 8.000000)">
+                    <g id="_Gruppe_109">
+                        <g id="_Gruppe_110" transform="translate(2.000000, 1.000000)" fill="#40404A">
+                            <g id="_Gruppe_111">
+                                <g id="_Gruppe_112">
+                                    <polygon id="_Pfad_62" points="6.73 0.08 6.73 16.59 0.33 20.29 0.33 3.77"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_113" transform="translate(0.000000, 3.000000)" fill="#292930">
+                            <g id="_Gruppe_114">
+                                <g id="_Gruppe_115">
+                                    <polygon id="_Pfad_63" points="0.93 0.97 0.93 17.48 2.33 18.29 2.33 1.77"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_64" fill="#616170" points="0.93 3.97 7.33 0.27 8.73 1.08 2.33 4.77"></polygon>
+                    </g>
+                    <g id="_Gruppe_116" transform="translate(3.000000, 2.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_117">
+                            <g id="_Gruppe_118">
+                                <polygon id="_Pfad_65" points="4.91 0.52 4.91 7.19 0.15 9.94 0.15 3.27"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_119" transform="translate(3.000000, 10.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_120">
+                            <g id="_Gruppe_121">
+                                <polygon id="_Pfad_66" points="4.91 0.43 4.91 7.09 0.15 9.84 0.15 3.18"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="_Gruppe_122" transform="translate(15.000000, 0.000000)">
+                    <g id="_Gruppe_123">
+                        <g id="_Gruppe_124" transform="translate(1.000000, 0.000000)" fill="#40404A">
+                            <g id="_Gruppe_125">
+                                <g id="_Gruppe_126">
+                                    <polygon id="_Pfad_67" points="6.87 0.92 6.87 17.43 0.46 21.13 0.46 4.61"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_127" transform="translate(0.000000, 3.000000)" fill="#292930">
+                            <g id="_Gruppe_128">
+                                <g id="_Gruppe_129">
+                                    <polygon id="_Pfad_68" points="0.06 0.81 0.06 17.31 1.46 18.13 1.46 1.61"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_69" fill="#616170" points="0.06 3.81 6.47 0.11 7.87 0.92 1.46 4.61"></polygon>
+                    </g>
+                    <g id="_Gruppe_130" transform="translate(2.000000, 2.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_131">
+                            <g id="_Gruppe_132">
+                                <polygon id="_Pfad_70" points="5.04 0.36 5.04 7.03 0.29 9.77 0.29 3.11"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_133" transform="translate(2.000000, 10.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_134">
+                            <g id="_Gruppe_135">
+                                <polygon id="_Pfad_71" points="5.04 0.27 5.04 6.93 0.29 9.68 0.29 3.01"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="_Gruppe_136" transform="translate(55.000000, 84.000000)">
+                <g id="_Gruppe_137">
+                    <g id="_Gruppe_138">
+                        <g id="_Gruppe_139" transform="translate(2.000000, 1.000000)" fill="#40404A">
+                            <g id="_Gruppe_140">
+                                <g id="_Gruppe_141">
+                                    <polygon id="_Pfad_72" points="6.58 0.25 6.58 16.76 0.17 20.46 0.17 3.94"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_142" transform="translate(0.000000, 4.000000)" fill="#292930">
+                            <g id="_Gruppe_143">
+                                <g id="_Gruppe_144">
+                                    <polygon id="_Pfad_73" points="0.77 0.15 0.77 16.65 2.17 17.46 2.17 0.94"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_74" fill="#616170" points="0.77 4.15 7.18 0.44 8.58 1.25 2.17 4.94"></polygon>
+                    </g>
+                    <g id="_Gruppe_145" transform="translate(3.000000, 2.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_146">
+                            <g id="_Gruppe_147">
+                                <polygon id="_Pfad_75" points="4.76 0.69 4.76 7.36 0 10.1 0 3.44"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_148" transform="translate(3.000000, 10.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_149">
+                            <g id="_Gruppe_150">
+                                <polygon id="_Pfad_76" points="4.76 0.6 4.76 7.27 0 10.01 0 3.35"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="_Gruppe_194" transform="translate(16.000000, 50.000000)">
+                <g id="_Gruppe_195" transform="translate(14.000000, 8.000000)">
+                    <g id="_Gruppe_196">
+                        <g id="_Gruppe_197" transform="translate(0.000000, 1.000000)" fill="#40404A">
+                            <g id="_Gruppe_198">
+                                <g id="_Gruppe_199">
+                                    <polygon id="_Pfad_92" points="0.71 0.47 0.71 16.98 7.12 20.67 7.12 4.16"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_200" transform="translate(7.000000, 4.000000)" fill="#292930">
+                            <g id="_Gruppe_201">
+                                <g id="_Gruppe_202">
+                                    <polygon id="_Pfad_93" points="1.52 0.36 1.52 16.86 0.12 17.67 0.12 1.16"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_94" fill="#616170" points="8.52 4.36 2.11 0.66 0.71 1.47 7.12 5.16"></polygon>
+                    </g>
+                    <g id="_Gruppe_203" transform="translate(1.000000, 2.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_204">
+                            <g id="_Gruppe_205">
+                                <polygon id="_Pfad_95" points="0.54 0.91 0.54 7.58 5.3 10.32 5.3 3.66"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_206" transform="translate(1.000000, 10.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_207">
+                            <g id="_Gruppe_208">
+                                <polygon id="_Pfad_96" points="0.54 0.82 0.54 7.48 5.3 10.23 5.3 3.56"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="_Gruppe_209">
+                    <g id="_Gruppe_210">
+                        <g id="_Gruppe_211" transform="translate(0.000000, 1.000000)" fill="#40404A">
+                            <g id="_Gruppe_212">
+                                <g id="_Gruppe_213">
+                                    <polygon id="_Pfad_97" points="0.58 0.3 0.58 16.81 6.98 20.51 6.98 4"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_214" transform="translate(6.000000, 4.000000)" fill="#292930">
+                            <g id="_Gruppe_215">
+                                <g id="_Gruppe_216">
+                                    <polygon id="_Pfad_98" points="2.38 0.2 2.38 16.7 0.98 17.51 0.98 1"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_99" fill="#616170" points="8.38 4.2 1.98 0.5 0.58 1.3 6.98 5"></polygon>
+                    </g>
+                    <g id="_Gruppe_217" transform="translate(1.000000, 2.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_218">
+                            <g id="_Gruppe_219">
+                                <polygon id="_Pfad_100" points="0.4 0.75 0.4 7.41 5.16 10.16 5.16 3.49"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_220" transform="translate(1.000000, 10.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_221">
+                            <g id="_Gruppe_222">
+                                <polygon id="_Pfad_101" points="0.4 0.66 0.4 7.32 5.16 10.07 5.16 3.4"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="_Gruppe_223" transform="translate(16.000000, 77.000000)">
+                <g id="_Gruppe_224" transform="translate(14.000000, 8.000000)">
+                    <g id="_Gruppe_225">
+                        <g id="_Gruppe_226" transform="translate(0.000000, 1.000000)" fill="#40404A">
+                            <g id="_Gruppe_227">
+                                <g id="_Gruppe_228">
+                                    <polygon id="_Pfad_102" points="0.71 0.21 0.71 16.72 7.12 20.42 7.12 3.91"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_229" transform="translate(7.000000, 4.000000)" fill="#292930">
+                            <g id="_Gruppe_230">
+                                <g id="_Gruppe_231">
+                                    <polygon id="_Pfad_103" points="1.52 0.11 1.52 16.61 0.12 17.42 0.12 0.91"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_104" fill="#616170" points="8.52 4.11 2.11 0.4 0.71 1.21 7.12 4.91"></polygon>
+                    </g>
+                    <g id="_Gruppe_232" transform="translate(1.000000, 2.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_233">
+                            <g id="_Gruppe_234">
+                                <polygon id="_Pfad_105" points="0.54 0.65 0.54 7.32 5.3 10.07 5.3 3.4"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_235" transform="translate(1.000000, 10.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_236">
+                            <g id="_Gruppe_237">
+                                <polygon id="_Pfad_106" points="0.54 0.56 0.54 7.23 5.3 9.97 5.3 3.31"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="_Gruppe_238">
+                    <g id="_Gruppe_239">
+                        <g id="_Gruppe_240" transform="translate(0.000000, 1.000000)" fill="#40404A">
+                            <g id="_Gruppe_241">
+                                <g id="_Gruppe_242">
+                                    <polygon id="_Pfad_107" points="0.58 0.05 0.58 16.56 6.98 20.26 6.98 3.75"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_Gruppe_243" transform="translate(6.000000, 3.000000)" fill="#292930">
+                            <g id="_Gruppe_244">
+                                <g id="_Gruppe_245">
+                                    <polygon id="_Pfad_108" points="2.38 0.94 2.38 17.45 0.98 18.26 0.98 1.75"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="_Pfad_109" fill="#616170" points="8.38 3.94 1.98 0.24 0.58 1.05 6.98 4.75"></polygon>
+                    </g>
+                    <g id="_Gruppe_246" transform="translate(1.000000, 2.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_247">
+                            <g id="_Gruppe_248">
+                                <polygon id="_Pfad_110" points="0.4 0.49 0.4 7.16 5.16 9.9 5.16 3.24"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_249" transform="translate(1.000000, 10.000000)" fill="#EBEBFF">
+                        <g id="_Gruppe_250">
+                            <g id="_Gruppe_251">
+                                <polygon id="_Pfad_111" points="0.4 0.4 0.4 7.06 5.16 9.81 5.16 3.15"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="_Gruppe_252" transform="translate(12.000000, 119.000000)">
+                <g id="_Gruppe_253">
+                    <g id="_Gruppe_254">
+                        <g id="_Gruppe_255">
+                            <g id="_Gruppe_256">
+                                <g id="_Gruppe_257" fill="#40404A">
+                                    <g id="_Gruppe_258">
+                                        <g id="_Gruppe_259">
+                                            <polygon id="_Pfad_112" points="10.09 5.8 10.09 33.52 1.59 28.6 0.19 29.41 0.19 29.41 0.19 29.41 0.19 0.08"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="_Gruppe_260" fill="#292930">
+                                    <g id="_Gruppe_261">
+                                        <g id="_Gruppe_262">
+                                            <polygon id="_Pfad_113" points="1.59 0.89 1.59 28.6 0.19 29.41 0.19 0.08"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="_Gruppe_263" transform="translate(2.000000, 2.000000)">
+                    <g id="_Gruppe_264">
+                        <g id="_Gruppe_265">
+                            <g id="_Gruppe_266">
+                                <g id="_Gruppe_267" fill="#EBEBFF">
+                                    <g id="_Gruppe_268">
+                                        <g id="_Gruppe_269">
+                                            <polygon id="_Pfad_114" points="0.4 0.53 0.4 19.2 7.14 23.09 7.14 4.42"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="_Gruppe_270" fill="#1C1C1C">
+                                    <g id="_Gruppe_271">
+                                        <g id="_Gruppe_272">
+                                            <polygon id="_Pfad_115" points="1.13 0.95 1.13 18.77 0.4 19.2 0.4 0.53"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <polygon id="_Pfad_116" fill="#424242" points="0.4 19.2 1.13 18.77 7.14 22.25 7.14 23.09"></polygon>
+                </g>
+            </g>
+            <g id="_Gruppe_273" transform="translate(49.000000, 11.000000)">
+                <g id="_Gruppe_274">
+                    <polygon id="_Pfad_117" fill="#D2D2DB" points="8.44 4.58 13.49 7.5 13.49 5.55 8.44 2.64"></polygon>
+                    <polygon id="_Pfad_118" fill="#B6B6D1" points="8.44 2.64 8.44 4.58 1.7 8.47 1.7 6.52"></polygon>
+                    <g id="_Gruppe_275" transform="translate(8.000000, 5.000000)" fill="#B6B6D1">
+                        <g id="_Gruppe_276">
+                            <g id="_Gruppe_277">
+                                <polygon id="_Pfad_119" points="8.78 0.46 8.78 3.48 0.42 8.32 0.42 5.3"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_278" transform="translate(0.000000, 5.000000)" fill="#D2D2DB">
+                        <g id="_Gruppe_279">
+                            <g id="_Gruppe_280">
+                                <polygon id="_Pfad_120" points="0.05 0.46 0.05 3.48 8.42 8.32 8.42 5.3"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <path d="M8.42,0.64 L0.05,5.46 L8.42,10.29 L16.79,5.46 L8.42,0.64 Z M3.42,5.55 L8.42,2.64 L13.47,5.55 L8.42,8.47 L3.42,5.55 Z" id="_Zusammengesetzter_Pfad_2" fill="#F1F1F2"></path>
+                    <polygon id="_Pfad_121" fill="#A2A2BA" points="8.44 4.58 5.07 6.52 8.44 8.47 11.81 6.52"></polygon>
+                </g>
+                <polygon id="_Pfad_122" fill="url(#linearGradient-4)" style="mix-blend-mode: multiply;" points="16.78 8.48 8.42 13.32 15.23 15.62 22.27 11.55"></polygon>
+            </g>
+            <g id="_Gruppe_281" transform="translate(64.000000, 10.000000)">
+                <g id="_Gruppe_282">
+                    <g id="_Gruppe_283" transform="translate(9.000000, 5.000000)" fill="#CFCFE3">
+                        <g id="_Gruppe_284">
+                            <g id="_Gruppe_285">
+                                <polygon id="_Pfad_123" points="10.31 0.67 10.31 11.43 0.82 17.15 0.82 6.39"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_286" transform="translate(0.000000, 5.000000)" fill="#E3E3ED">
+                        <g id="_Gruppe_287">
+                            <g id="_Gruppe_288">
+                                <polygon id="_Pfad_124" points="0.23 0.86 0.23 11.62 9.82 17.15 9.82 6.39"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <polygon id="_Pfad_125" fill="#F6F6F7" points="0.23 5.86 9.73 0.14 19.31 5.67 9.82 11.39"></polygon>
+                </g>
+                <g id="_Gruppe_289" transform="translate(4.000000, 17.000000)">
+                    <g id="_Gruppe_290" transform="translate(3.000000, 2.000000)" fill="#CFCFE3">
+                        <g id="_Gruppe_291">
+                            <g id="_Gruppe_292">
+                                <polygon id="_Pfad_126" points="2.82 0.11 2.82 3.18 0.11 4.81 0.11 1.74"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_293" transform="translate(0.000000, 2.000000)" fill="#E3E3ED">
+                        <g id="_Gruppe_294">
+                            <g id="_Gruppe_295">
+                                <polygon id="_Pfad_127" points="0.38 0.16 0.38 3.23 3.11 4.81 3.11 1.74"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <polygon id="_Pfad_128" fill="#F6F6F7" points="0.38 2.16 3.09 0.53 5.82 2.11 3.11 3.74"></polygon>
+                </g>
+                <polygon id="_Pfad_129" fill="url(#linearGradient-5)" style="mix-blend-mode: multiply;" points="11.28 24.69 7.11 23.81 19.31 16.43 22.59 18.32"></polygon>
+            </g>
+            <g id="_Gruppe_296" transform="translate(0.000000, 112.000000)">
+                <polygon id="_Pfad_130" fill="#2D4151" points="42.42 20.06 42.42 29.78 34.02 34.63"></polygon>
+                <polygon id="_Pfad_131" fill="#566A8F" points="8.36 0.54 0 14.99 34.02 34.63 42.42 20.06"></polygon>
+                <polygon id="_Pfad_132" fill="#FEFDF6" points="10.97 2.06 2.62 16.5 5.24 18.02 13.59 3.54"></polygon>
+                <polygon id="_Pfad_133" fill="#FEFDF6" points="16.21 5.08 7.85 19.52 10.47 21.04 18.81 6.58"></polygon>
+                <polygon id="_Pfad_134" fill="#FEFDF6" points="21.44 8.1 13.08 22.54 15.71 24.06 24.05 9.61"></polygon>
+                <polygon id="_Pfad_135" fill="#FEFDF6" points="26.68 11.12 18.32 25.56 20.94 27.08 29.28 12.63"></polygon>
+                <polygon id="_Pfad_136" fill="#FEFDF6" points="31.91 14.14 23.55 28.59 26.17 30.1 34.52 15.65"></polygon>
+                <polygon id="_Pfad_137" fill="#FEFDF6" points="37.14 17.16 28.78 31.61 31.41 33.12 39.74 18.68"></polygon>
+            </g>
+            <g id="_Gruppe_297" transform="translate(10.000000, 98.000000)">
+                <g id="_Gruppe_298">
+                    <g id="_Gruppe_299" transform="translate(0.000000, 1.000000)" fill="#40404A">
+                        <g id="_Gruppe_300">
+                            <g id="_Gruppe_301">
+                                <polygon id="_Pfad_138" points="0.17 0.84 0.17 17.35 28.31 33.6 28.31 17.09"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="_Gruppe_302" transform="translate(28.000000, 16.000000)" fill="#292930">
+                        <g id="_Gruppe_303">
+                            <g id="_Gruppe_304">
+                                <polygon id="_Pfad_139" points="2.88 0.61 2.88 17.12 0.31 18.6 0.31 2.09"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <polygon id="_Pfad_140" fill="#616170" points="30.88 16.61 2.73 0.36 0.17 1.84 28.31 18.09"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

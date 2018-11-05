@@ -8,7 +8,8 @@
 }
 
 .big .box {
-    transform: skewX(25deg) rotateX(-58deg) rotateY(-10deg) rotateZ(33deg);
+    /*transform: skewX(25deg) rotateX(-58deg) rotateY(-10deg) rotateZ(33deg);*/
+    transform: skewX(37deg) rotateX(-64deg) rotateY(-11deg) rotateZ(30deg);
     top: -75px;
     left: 75px;
 }
