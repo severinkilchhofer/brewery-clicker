@@ -92,22 +92,23 @@ const updateGebaudeCards = () => {
 
 const checkIsFinished = () => {
     state.gamePlay.gebaudeAufLand = state.land.length;
-    if (state.gamePlay.gebaudeAufLand === 17) {
+    if (state.gamePlay.gebaudeAufLand === 17 && state.overview.einwohner < 10000) {
         state.gamePlay.finished = true;
         stopwatch.stop();
         stopwatch2.stop();
-        modalEnde.style.display = "block";
-    } else if (state.overview.einwohner > 10000) {
+        stopwatch3.stop();
+        failedEnde.style.display = "block";
+    } else if (state.overview.einwohner >= 10000) {
         state.gamePlay.finished = true;
         stopwatch.stop();
         stopwatch2.stop();
-        modalEnde.style.display = "block";
+        stopwatch3.stop();
+        successEnde.style.display = "block";
     }
 };
 
 const initLand = () => {
     updateEinwohner();
-    // updateMonatsmiete();
     updateGebaudeCards();
 };
 
@@ -126,4 +127,5 @@ const startGame = () => {
     modalAnfang.style.display = "none";
     stopwatch.start();
     stopwatch2.start();
+    stopwatch3.start();
 };

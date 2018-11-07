@@ -101,3 +101,7 @@ let stopwatch = new Stopwatch(
 let stopwatch2 = new Stopwatch(
     document.querySelector('.stopwatch2'),
     document.querySelector('.results2'));
+
+let stopwatch3 = new Stopwatch(
+    document.querySelector('.stopwatch3'),
+    document.querySelector('.results3'));
