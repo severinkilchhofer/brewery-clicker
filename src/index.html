@@ -8,9 +8,12 @@
     <link rel="stylesheet" type="text/css" href="css/drop.css">
     <link rel="stylesheet" type="text/css" href="css/monthCounter.css">
     <link rel="stylesheet" type="text/css" href="css/introModal.css">
+    <link rel="stylesheet" type="text/css" href="css/stopwatch.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,900" rel="stylesheet">
 </head>
 <body>
+<div class="overview--item">
+</div>
 <div class="background-container">
     <div class="container">
         <div id="introModal" class="modal">
@@ -21,6 +24,15 @@
                 <p>In meinem Spiel geht es darum, deine eigene Stadt aufzubauen. Versuche so viele Einwohner wie möglich
                     zu erhalten indem du Gebäude auf die Spielfläche ziehst.</p>
                 <p>Wichtig: Wenn du alle 16 Felder besetzt hast, ist das Spiel zu Ende.</p>
+                <a href="#" class="button" onClick="startGame()">Start</a>
+            </div>
+        </div>
+        <div id="modalEnde" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Geschafft!!</h1>
+                <div class="stopwatch2"></div>
+                <ul class="results2"></ul>
             </div>
         </div>
 
@@ -33,16 +45,11 @@
                 <div class="label">Mieteinnahmen</div>
                 <div class="value" id="mieteinnahmenCounter"></div>
             </div>
-            <div class="counter-title">
-                <div>Tag</div>
-                <div>Monat</div>
-                <div>Jahr</div>
+            <div class="overview--item">
+                <div class="stopwatch"></div>
+                <ul class="results"></ul>
             </div>
-            <div class="counter">
-                <div>1.</div>
-                <div id="month">1.</div>
-                <div id="year">2018</div>
-            </div>
+
         </div>
         <div class="big" id="land">
             <div class="field rowA colA holder" data-id="0"></div>
@@ -81,26 +88,26 @@
                      style="background-image: url('./img/gebaude/Behoerde.svg');"
                      draggable="true"
                      data-typ="behoerde"
-                     data-einwohner="5"
-                     data-miete="20"
+                     data-einwohner="50"
+                     data-miete="100"
                      data-kosten="0"
                      data-id="20"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Behörde</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +50</h2>
+                <h2>Mieteinnahmen: 100$</h2>
             </div>
         </div>
 
         <!--Cafe-->
-        <div class="gebaudeCard" data-preis="100" data-id="21">
+        <div class="gebaudeCard" data-preis="400" data-id="21">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(21)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    400$
                 </div>
             </div>
             <div class="holder">
@@ -109,27 +116,27 @@
                      style="background-image: url('img/cafe.svg');"
                      draggable="true"
                      data-typ="cafe"
-                     data-einwohner="20"
-                     data-miete="50"
-                     data-kosten="100"
+                     data-einwohner="80"
+                     data-miete="200"
+                     data-kosten="400"
                      data-id="21">
                 </div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Cafe</h1>
-                <h2>Einwohner: +20</h2>
-                <h2>Mieteinnahmen: 50$</h2>
+                <h2>Einwohner: +80</h2>
+                <h2>Mieteinnahmen: 200$</h2>
             </div>
         </div>
 
         <!--Wohnhaus-->
-        <div class="gebaudeCard" data-preis="300" data-id="22">
+        <div class="gebaudeCard" data-preis="400" data-id="22">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(22)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    400$
                 </div>
             </div>
             <div class="holder">
@@ -138,26 +145,26 @@
                      style="background-image: url('./img/gebaude/Wohnhaus.svg');"
                      draggable="true"
                      data-typ="wohnhaus"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="120"
+                     data-miete="180"
+                     data-kosten="400"
                      data-id="22"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Wohnhaus</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +120</h2>
+                <h2>Mieteinnahmen: 180$</h2>
             </div>
         </div>
 
         <!--Tante Emma Laden-->
-        <div class="gebaudeCard" data-preis="0" data-id="23">
+        <div class="gebaudeCard" data-preis="500" data-id="23">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(23)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    500$
                 </div>
             </div>
             <div class="holder">
@@ -166,26 +173,26 @@
                      style="background-image: url('img/gebaude/Tante_Emma_Laden.svg');"
                      draggable="true"
                      data-typ="tanteemmaladen"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="90"
+                     data-miete="200"
+                     data-kosten="500"
                      data-id="23"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Tante Emma Laden</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +90</h2>
+                <h2>Mieteinnahmen: 200$</h2>
             </div>
         </div>
 
         <!--Apotheke-->
-        <div class="gebaudeCard" data-preis="0" data-id="24">
+        <div class="gebaudeCard" data-preis="700" data-id="24">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(24)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    700$
                 </div>
             </div>
             <div class="holder">
@@ -194,26 +201,26 @@
                      style="background-image: url('./img/gebaude/Apotheke.svg');"
                      draggable="true"
                      data-typ="apotheke"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="100"
+                     data-miete="300"
+                     data-kosten="700"
                      data-id="24"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Apotheke</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +100</h2>
+                <h2>Mieteinnahmen: 300$</h2>
             </div>
         </div>
 
         <!--Arztpraxis-->
-        <div class="gebaudeCard" data-preis="0" data-id="25">
+        <div class="gebaudeCard" data-preis="1000" data-id="25">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(25)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    1000$
                 </div>
             </div>
             <div class="holder">
@@ -222,26 +229,26 @@
                      style="background-image: url('./img/gebaude/Artzpraxis.svg');"
                      draggable="true"
                      data-typ="arztpraxis"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="100"
+                     data-miete="400"
+                     data-kosten="1000"
                      data-id="25"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Arztpraxis</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +100</h2>
+                <h2>Mieteinnahmen: 400$</h2>
             </div>
         </div>
 
         <!--Buerogebaude-->
-        <div class="gebaudeCard" data-preis="0" data-id="26">
+        <div class="gebaudeCard" data-preis="3000" data-id="26">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(26)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    3000$
                 </div>
             </div>
             <div class="holder">
@@ -250,26 +257,26 @@
                      style="background-image: url('./img/gebaude/Bürogebaude.svg');"
                      draggable="true"
                      data-typ="buerogebaude"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="200"
+                     data-miete="450"
+                     data-kosten="3000"
                      data-id="26"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Bürogebaude</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +200</h2>
+                <h2>Mieteinnahmen: 450$</h2>
             </div>
         </div>
 
         <!--Club-->
-        <div class="gebaudeCard" data-preis="0" data-id="27">
+        <div class="gebaudeCard" data-preis="2500" data-id="27">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(27)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    2500$
                 </div>
             </div>
             <div class="holder">
@@ -278,26 +285,26 @@
                      style="background-image: url('./img/gebaude/Club.svg');"
                      draggable="true"
                      data-typ="club"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="60"
+                     data-miete="600"
+                     data-kosten="2500"
                      data-id="27"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Club</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +60</h2>
+                <h2>Mieteinnahmen: 600$</h2>
             </div>
         </div>
 
         <!--Spital-->
-        <div class="gebaudeCard" data-preis="0" data-id="28">
+        <div class="gebaudeCard" data-preis="5000" data-id="28">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(28)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    5000$
                 </div>
             </div>
             <div class="holder">
@@ -306,26 +313,26 @@
                      style="background-image: url('./img/gebaude/Spital.svg');"
                      draggable="true"
                      data-typ="spital"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="700"
+                     data-miete="600"
+                     data-kosten="5000"
                      data-id="28"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Spital</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +700</h2>
+                <h2>Mieteinnahmen: 600$</h2>
             </div>
         </div>
 
         <!--Bäckerei-->
-        <div class="gebaudeCard" data-preis="0" data-id="29">
+        <div class="gebaudeCard" data-preis="950" data-id="29">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(29)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    950$
                 </div>
             </div>
             <div class="holder">
@@ -334,26 +341,26 @@
                      style="background-image: url('./img/gebaude/Bäckerei.svg');"
                      draggable="true"
                      data-typ="baeckerei"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="150"
+                     data-miete="200"
+                     data-kosten="950"
                      data-id="29"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Bäckerei</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +150</h2>
+                <h2>Mieteinnahmen: 200$</h2>
             </div>
         </div>
 
         <!--Altersheim-->
-        <div class="gebaudeCard" data-preis="0" data-id="30">
+        <div class="gebaudeCard" data-preis="6000" data-id="30">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(30)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    6000$
                 </div>
             </div>
             <div class="holder">
@@ -362,26 +369,26 @@
                      style="background-image: url('./img/gebaude/Altersheim.svg');"
                      draggable="true"
                      data-typ="altersheim"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="500"
+                     data-miete="800"
+                     data-kosten="6000"
                      data-id="30"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Altersheim</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +500</h2>
+                <h2>Mieteinnahmen: 800$</h2>
             </div>
         </div>
 
         <!--Tankstelle-->
-        <div class="gebaudeCard" data-preis="300" data-id="31">
+        <div class="gebaudeCard" data-preis="1000" data-id="31">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(31)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    1000$
                 </div>
             </div>
             <div class="holder">
@@ -390,26 +397,26 @@
                      style="background-image: url('./img/tankstelle.svg');"
                      draggable="true"
                      data-typ="tankstelle"
-                     data-einwohner="40"
-                     data-miete="15"
-                     data-kosten="300"
+                     data-einwohner="250"
+                     data-miete="50"
+                     data-kosten="1000"
                      data-id="31"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Tankstelle</h1>
-                <h2>Einwohner: +40</h2>
-                <h2>Mieteinnahmen: 15$</h2>
+                <h2>Einwohner: +250</h2>
+                <h2>Mieteinnahmen: 50$</h2>
             </div>
         </div>
 
         <!--Coiffeur-->
-        <div class="gebaudeCard" data-preis="0" data-id="32">
+        <div class="gebaudeCard" data-preis="2000" data-id="32">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(32)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    2000$
                 </div>
             </div>
             <div class="holder">
@@ -419,25 +426,25 @@
                      draggable="true"
                      data-typ="coiffeur"
                      data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-miete="30"
+                     data-kosten="2000"
                      data-id="32"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Coiffeur</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +350</h2>
+                <h2>Mieteinnahmen: 30$</h2>
             </div>
         </div>
 
         <!--Gefängnis-->
-        <div class="gebaudeCard" data-preis="0" data-id="33">
+        <div class="gebaudeCard" data-preis="9000" data-id="33">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(33)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    9000$
                 </div>
             </div>
             <div class="holder">
@@ -446,26 +453,26 @@
                      style="background-image: url('./img/gebaude/Gefängnis.svg');"
                      draggable="true"
                      data-typ="gefaengnis"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="200"
+                     data-miete="700"
+                     data-kosten="9000"
                      data-id="33"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Gefängnis</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +200</h2>
+                <h2>Mieteinnahmen: 700$</h2>
             </div>
         </div>
 
         <!--Brauerei-->
-        <div class="gebaudeCard" data-preis="400" data-id="34">
+        <div class="gebaudeCard" data-preis="3500" data-id="34">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(34)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    3500$
                 </div>
             </div>
             <div class="holder">
@@ -474,26 +481,26 @@
                      style="background-image: url('./img/brauerei.svg');"
                      draggable="true"
                      data-typ="brauerei"
-                     data-einwohner="30"
-                     data-miete="100"
-                     data-kosten="400"
+                     data-einwohner="500"
+                     data-miete="300"
+                     data-kosten="3500"
                      data-id="34"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Brauerei</h1>
-                <h2>Einwohner: +30</h2>
-                <h2>Mieteinnahmen: 100$</h2>
+                <h2>Einwohner: +500</h2>
+                <h2>Mieteinnahmen: 300$</h2>
             </div>
         </div>
 
         <!--Bank-->
-        <div class="gebaudeCard" data-preis="0" data-id="35">
+        <div class="gebaudeCard" data-preis="20000" data-id="35">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(35)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    20000$
                 </div>
             </div>
             <div class="holder">
@@ -502,26 +509,26 @@
                      style="background-image: url('./img/gebaude/Bank.svg');"
                      draggable="true"
                      data-typ="bank"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="800"
+                     data-miete="1200"
+                     data-kosten="20000"
                      data-id="35"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Bank</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +800</h2>
+                <h2>Mieteinnahmen: 1200$</h2>
             </div>
         </div>
 
         <!--Blumenladen-->
-        <div class="gebaudeCard" data-preis="0" data-id="36">
+        <div class="gebaudeCard" data-preis="2800" data-id="36">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(36)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    2800$
                 </div>
             </div>
             <div class="holder">
@@ -530,26 +537,26 @@
                      style="background-image: url('./img/gebaude/Blumenladen.svg');"
                      draggable="true"
                      data-typ="blumenladen"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="400"
+                     data-miete="50"
+                     data-kosten="2800"
                      data-id="36"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Blumenladen</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +400</h2>
+                <h2>Mieteinnahmen: 50$</h2>
             </div>
         </div>
 
         <!--Startup Büro-->
-        <div class="gebaudeCard" data-preis="0" data-id="37">
+        <div class="gebaudeCard" data-preis="4000" data-id="37">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(37)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    4000$
                 </div>
             </div>
             <div class="holder">
@@ -558,26 +565,26 @@
                      style="background-image: url('img/gebaude/Startup_Büro.svg');"
                      draggable="true"
                      data-typ="startupbuero"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="500"
+                     data-miete="150"
+                     data-kosten="4000"
                      data-id="37"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Startup Büro</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +500</h2>
+                <h2>Mieteinnahmen: 150$</h2>
             </div>
         </div>
 
         <!--Versicherung-->
-        <div class="gebaudeCard" data-preis="0" data-id="38">
+        <div class="gebaudeCard" data-preis="30000" data-id="38">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(38)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    30000$
                 </div>
             </div>
             <div class="holder">
@@ -586,26 +593,26 @@
                      style="background-image: url('./img/gebaude/Versicherung.svg');"
                      draggable="true"
                      data-typ="versicherung"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="1500"
+                     data-miete="2000"
+                     data-kosten="30000"
                      data-id="38"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Versicherung</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +1500</h2>
+                <h2>Mieteinnahmen: 2000$</h2>
             </div>
         </div>
 
         <!--Kino-->
-        <div class="gebaudeCard" data-preis="0" data-id="39">
+        <div class="gebaudeCard" data-preis="100000" data-id="39">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderLeft">
                     <button onclick="displayNone(39)">x</button>
                 </div>
                 <div class="cardHeaderRight">
-                    0$
+                    100000$
                 </div>
             </div>
             <div class="holder">
@@ -614,15 +621,15 @@
                      style="background-image: url('./img/gebaude/Kino.svg');"
                      draggable="true"
                      data-typ="kino"
-                     data-einwohner="5"
-                     data-miete="20"
-                     data-kosten="0"
+                     data-einwohner="3500"
+                     data-miete="2000"
+                     data-kosten="100000"
                      data-id="39"></div>
             </div>
             <div class="gebaudeBeschreibung">
                 <h1>Kino</h1>
-                <h2>Einwohner: +5</h2>
-                <h2>Mieteinnahmen: 20$</h2>
+                <h2>Einwohner: +3500</h2>
+                <h2>Mieteinnahmen: 2000$</h2>
             </div>
         </div>
 
@@ -630,10 +637,12 @@
 </div>
 
 <script src="js/app.js"></script>
-<script src="js/monthCounter.js"></script>
+<!--<script src="js/monthCounter.js"></script>-->
 <script src="js/introModal.js"></script>
 <script src="js/drop.js"></script>
 <script src="js/scores.js"></script>
+<script src="js/stopwatch.js"></script>
+
 </body>
 
 </html>

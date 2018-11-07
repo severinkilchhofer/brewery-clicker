@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     initLand();
-    //TODO add intro Modal
-    // modal.style.display = "block";
+    modalAnfang.style.display = "block";
 });
 
 const $ = document.querySelector.bind(document);
@@ -58,7 +57,7 @@ const updateGesamtesGeld = () => {
                 monthCountup();
                 state.interval.counterInterval = true;
             }
-        }, 5000);
+        }, 3000);
         // }, 5000);
     }
 };
@@ -68,7 +67,6 @@ const updateMonatsmiete = () => {
     const geld = state.land.map(item => +item.miete);
     const add = (a, b) => a + b;
     state.overview.mieteinnahmen = geld.reduce(add);
-
     updateGesamtesGeld();
 };
 
@@ -76,7 +74,8 @@ const updateEinwohner = () => {
     const anzahl = state.land.map(item => +item.einwohner);
     const add = (a, b) => a + b;
     state.overview.einwohner = anzahl.reduce(add);
-    getEinwohner().innerHTML = `${state.overview.einwohner}`;
+    getEinwohner().innerHTML = `${state.overview.einwohner} / 10'000`;
+    checkIsFinished();
 };
 
 const updateGebaudeCards = () => {
@@ -95,7 +94,14 @@ const checkIsFinished = () => {
     state.gamePlay.gebaudeAufLand = state.land.length;
     if (state.gamePlay.gebaudeAufLand === 17) {
         state.gamePlay.finished = true;
-        alert('feeertig!!')
+        stopwatch.stop();
+        stopwatch2.stop();
+        modalEnde.style.display = "block";
+    } else if (state.overview.einwohner > 10000) {
+        state.gamePlay.finished = true;
+        stopwatch.stop();
+        stopwatch2.stop();
+        modalEnde.style.display = "block";
     }
 };
 
@@ -114,4 +120,10 @@ const displayNone = (selectedId) => {
             item.classList.add('displayNone');
         }
     }
+};
+
+const startGame = () => {
+    modalAnfang.style.display = "none";
+    stopwatch.start();
+    stopwatch2.start();
 };
