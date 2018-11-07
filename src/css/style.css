@@ -3,7 +3,15 @@ body {
     font-family: 'Fira Sans', sans-serif;
 }
 
+h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 h2 {
+    font-size: 1em;
     font-weight: 400;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -11,7 +19,6 @@ h2 {
 
 .land {
 }
-
 
 .big {
     position: relative;
@@ -30,7 +37,7 @@ h2 {
     left: -80px;
     width: 80px;
     height: 100%;
-    background: linear-gradient(to left,  #5E9949 0%, #5E9949 40%, #fa971b 40%);
+    background: linear-gradient(to left, #5E9949 0%, #5E9949 40%, #fa971b 40%);
     transform-origin: right bottom;
     transform: skewY(-45deg);
 }
@@ -42,7 +49,7 @@ h2 {
     left: -80px;
     width: 100%;
     height: 80px;
-    background: linear-gradient(to bottom,  #35664D 0%, #35664D 40%, #DA7413 40%);
+    background: linear-gradient(to bottom, #35664D 0%, #35664D 40%, #DA7413 40%);
     transform-origin: bottom left;
     transform: skewX(-45deg);
 }
@@ -56,6 +63,46 @@ h2 {
     height: 25%;
     font-size: 40px;
     box-sizing: border-box;
+}
+
+.cardHeaderContainer {
+    width: 100%;
+    text-align: center;
+}
+
+.cardHeaderLeft {
+    float: left;
+    width: 100px;
+    padding-top: 8px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.cardHeaderLeft button {
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.center {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.cardHeaderRight {
+    float: right;
+    width: 100px;
+    text-align: right;
+    padding-top: 12px;
+    padding-right: 12px;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .rowA {

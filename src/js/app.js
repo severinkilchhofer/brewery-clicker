@@ -36,7 +36,7 @@ const getEinwohner = () => {
 };
 
 const updateKostenAbzug = () => {
-    const lastAddedGebaude =  state.land.map(item => +item.kosten);
+    const lastAddedGebaude = state.land.map(item => +item.kosten);
     const kostenLastAdded = lastAddedGebaude.pop();
 
     let geld = state.overview.geld;
@@ -103,4 +103,15 @@ const initLand = () => {
     updateEinwohner();
     // updateMonatsmiete();
     updateGebaudeCards();
+};
+
+const displayNone = (selectedId) => {
+    for (const item of $('#gebaudeSammlung').children) {
+
+        const element = +item.dataset.id;
+
+        if (selectedId === element) {
+            item.classList.add('displayNone');
+        }
+    }
 };
