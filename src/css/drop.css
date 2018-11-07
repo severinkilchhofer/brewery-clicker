@@ -8,7 +8,8 @@
 }
 
 .big .box {
-    transform: skewX(25deg) rotateX(-58deg) rotateY(-10deg) rotateZ(33deg);
+    /*transform: skewX(25deg) rotateX(-58deg) rotateY(-10deg) rotateZ(33deg);*/
+    transform: skewX(37deg) rotateX(-64deg) rotateY(-11deg) rotateZ(30deg);
     top: -75px;
     left: 75px;
 }
@@ -27,10 +28,51 @@
     display: inline-block;
 }
 
+.disabled {
+    background-color: gray !important;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.3;
+    /*color: red;*/
+}
+
 .hovered {
     background-color: #5E9949;
 }
 
 .invisible {
     display: none;
+}
+
+.gebaudeCard {
+    height: 370px;
+    width: 250px;
+    background-color: white;
+    display: inline-block;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.gebaudePreis {
+    text-align: right;
+    padding-top: 12px;
+    padding-right: 12px;
+    font-size: 25px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.gebaudeBeschreibung {
+    text-align: left;
+    margin-left: 20px;
+    /*color: white;*/
+}
+
+.displayNone {
+    display: none;
+}
+
+.buttonClose {
+    background-color: #35664D;
+    display: inline-block;
 }

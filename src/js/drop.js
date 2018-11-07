@@ -30,8 +30,6 @@ class App {
 
     static dragend() {
         this.className = "box";
-        console.log($('#land').children);
-        console.log('App.currentBox: ', App.currentBox);
     }
 
     static dragover(e) {
@@ -51,16 +49,19 @@ class App {
         this.className += "holder";
         this.append(App.currentBox);
 
-        state.land.push({id: +this.dataset.id, level: +App.currentBox.dataset.level, typ: App.currentBox.dataset.typ});
+        state.land.push({
+            id: +this.dataset.id,
+            typ: App.currentBox.dataset.typ,
+            einwohner: App.currentBox.dataset.einwohner,
+            miete: App.currentBox.dataset.miete,
+            kosten: App.currentBox.dataset.kosten
+        });
 
-
-        updateMaxLagerBestand();
-        updateLagerbestand(state.overview.lager.aktuellesLager);
-        updateHerstellungInSec();
-        updateHerstellung(state.overview.herstellung.aktuelleHerstellung);
-        setHerstellungInGange();
+        updateEinwohner();
+        updateMonatsmiete();
+        checkIsFinished();
     }
 
 }
 
-document.addEventListener("DOMContentLoaded", () => App.init(['#shop', '#lager', '#brauerei']));
+document.addEventListener("DOMContentLoaded", () => App.init(['#behoerde', '#cafe', '#wohnhaus', '#tanteemmaladen', '#apotheke', '#arztpraxis', '#buerogebaude', '#club', '#spital', '#baeckerei', '#altersheim', '#tankstelle', '#coiffeur', '#gefaengnis', '#brauerei', '#bank', '#blumenladen', '#startupbuero', '#versicherung', '#kino']));

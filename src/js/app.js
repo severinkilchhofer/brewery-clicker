@@ -1,113 +1,131 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     initLand();
+    modalAnfang.style.display = "block";
 });
 
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const state = {
+    interval: {
+        currentInterval: false,
+        counterInterval: false,
+    },
     overview: {
-        umsatz: 0,
-        herstellung: {
-            aktuelleHerstellung: 0,
-            maximaleHerstellung: 0
-        },
-        lager: {
-            aktuellesLager: 0,
-            maximalesLager: 0
-        }
+        mieteinnahmen: 0,
+        geld: 0,
+        einwohner: 0,
     },
     land: [
-        {id: 0, level: 0, typ: 'brauerei'},
-        {id: 1, level: 0, typ: 'lager'}
-    ]
-
-};
-
-const getLager = () => {
-    return $('#lagerCounter');
-};
-
-const getHerstellung = () => {
-    return $('#herstellungCounter');
-};
-
-const getUmsatz = () => {
-    return $('#umsatzCounter');
-};
-
-const updateBeer = () => {
-    updateLagerbestand(getAmountInLager() + 1);
-};
-
-const getAmountInLager = () => {
-    return state.overview.lager.aktuellesLager;
-};
-
-const getAmountInHerstellung = () => {
-    return state.overview.herstellung.aktuelleHerstellung;
-};
-
-const setHerstellungInGange = () => {
-    // if (state.overview.herstellung.maximaleHerstellung === 1) {
-        setInterval(() => {
-            updateHerstellung(getAmountInHerstellung() + 1);
-        }, 1000);
-    // }
-};
-
-const updateLagerbestand = (newValue) => {
-    let lager = state.overview.lager;
-    if (lager.maximalesLager < newValue) {
-        return;
+        {id: 0, typ: 'cafe', einwohner: 0, miete: 0, kosten: 0}
+    ],
+    gamePlay: {
+        gebaudeAufLand: 0,
+        finished: false,
     }
-    lager.aktuellesLager = newValue;
-    getLager().innerHTML = `${lager.aktuellesLager}/${lager.maximalesLager}`;
+
 };
 
-const updateHerstellung = (newValue) => {
-    let herstellung = state.overview.herstellung;
-    if (herstellung.maximaleHerstellung < newValue) {
-        return;
-    }
-    herstellung.aktuelleHerstellung = newValue;
-    getHerstellung().innerHTML = `${herstellung.aktuelleHerstellung}<br>${herstellung.maximaleHerstellung}/sec`;
+const getMieteinnahmen = () => {
+    return $('#mieteinnahmenCounter');
 };
 
-const updateUmsatz = (newValue) => {
-    let umsatz = state.overview.umsatz;
-    if (umsatz < newValue) {
-        return;
+const getEinwohner = () => {
+    return $('#einwohnerCounter');
+};
+
+const updateKostenAbzug = () => {
+    const lastAddedGebaude = state.land.map(item => +item.kosten);
+    const kostenLastAdded = lastAddedGebaude.pop();
+
+    let geld = state.overview.geld;
+    geld -= kostenLastAdded;
+    state.overview.geld = geld;
+    getMieteinnahmen().innerHTML = `${geld}$`;
+};
+
+const updateGesamtesGeld = () => {
+    if (!state.interval.currentInterval) {
+        setInterval(function () {
+            let geld = state.overview.geld;
+            geld += state.overview.mieteinnahmen;
+            state.overview.geld = geld;
+            state.interval.currentInterval = true;
+            updateGebaudeCards();
+            getMieteinnahmen().innerHTML = `${geld}$`;
+            if (!state.interval.counterInterval) {
+                monthCountup();
+                state.interval.counterInterval = true;
+            }
+        }, 3000);
+        // }, 5000);
     }
-    umsatz = newValue;
-    getUmsatz().innerHTML = `${umsatz}`;
+};
+
+const updateMonatsmiete = () => {
+    updateKostenAbzug();
+    const geld = state.land.map(item => +item.miete);
+    const add = (a, b) => a + b;
+    state.overview.mieteinnahmen = geld.reduce(add);
+    updateGesamtesGeld();
+};
+
+const updateEinwohner = () => {
+    const anzahl = state.land.map(item => +item.einwohner);
+    const add = (a, b) => a + b;
+    state.overview.einwohner = anzahl.reduce(add);
+    getEinwohner().innerHTML = `${state.overview.einwohner} / 10'000`;
+    checkIsFinished();
+};
+
+const updateGebaudeCards = () => {
+    for (const item of $('#gebaudeSammlung').children) {
+        const gebaudeKosten = +item.dataset.preis;
+
+        if (state.overview.geld < gebaudeKosten) {
+            item.classList.add('disabled')
+        } else {
+            item.classList.remove('disabled')
+        }
+    }
+};
+
+const checkIsFinished = () => {
+    state.gamePlay.gebaudeAufLand = state.land.length;
+    if (state.gamePlay.gebaudeAufLand === 17 && state.overview.einwohner < 10000) {
+        state.gamePlay.finished = true;
+        stopwatch.stop();
+        stopwatch2.stop();
+        stopwatch3.stop();
+        failedEnde.style.display = "block";
+    } else if (state.overview.einwohner >= 10000) {
+        state.gamePlay.finished = true;
+        stopwatch.stop();
+        stopwatch2.stop();
+        stopwatch3.stop();
+        successEnde.style.display = "block";
+    }
 };
 
 const initLand = () => {
-    updateMaxLagerBestand();
-    updateHerstellungInSec();
-    updateLagerbestand(state.overview.lager.aktuellesLager);
-    updateHerstellung(state.overview.herstellung.aktuelleHerstellung);
+    updateEinwohner();
+    updateGebaudeCards();
+};
 
-    for (const item of $('#land').children) {
-        const dataId = item.dataset.id;
-        const landInState = state.land.find(landItem => landItem.id === +dataId);
-        console.log(dataId, landInState);
+const displayNone = (selectedId) => {
+    for (const item of $('#gebaudeSammlung').children) {
+
+        const element = +item.dataset.id;
+
+        if (selectedId === element) {
+            item.classList.add('displayNone');
+        }
     }
 };
 
-const updateMaxLagerBestand = () => {
-    state.overview.lager.maximalesLager = state.land
-        .filter(item => item.typ === 'lager')
-        .map(item => getAmountForLevel(item))
-        .reduce((acc, cur) => acc + cur);
+const startGame = () => {
+    modalAnfang.style.display = "none";
+    stopwatch.start();
+    stopwatch2.start();
+    stopwatch3.start();
 };
-
-const updateHerstellungInSec = () => {
-    state.overview.herstellung.maximaleHerstellung = state.land
-        .filter(item => item.typ === 'brauerei')
-        .map(item => getAmountForLevel(item))
-        .reduce((acc, cur) => acc + cur);
-};
-
-const getAmountForLevel = (item) => scores[item.typ][item.level];
