@@ -22,6 +22,7 @@ const state = {
     gamePlay: {
         gebaudeAufLand: 0,
         finished: false,
+        droppedElementId: 0
     }
 
 };
@@ -117,7 +118,7 @@ const displayNone = (selectedId) => {
 
         const element = +item.dataset.id;
 
-        if (selectedId === element) {
+        if (+selectedId === element) {
             item.classList.add('displayNone');
         }
     }
