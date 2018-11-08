@@ -27,12 +27,33 @@ const state = {
 
 };
 
+    var elem = document.documentElement;
+    const openFullscreen = () => {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+    };
+
 const getMieteinnahmen = () => {
     return $('#mieteinnahmenCounter');
 };
 
 const getEinwohner = () => {
     return $('#einwohnerCounter');
+};
+
+const einwohnerAmEndeSuccessModal = () => {
+    return $('#einwohnerAmEndeSuccessModal');
+};
+
+const einwohnerAmEndeFailedModal = () => {
+    return $('#einwohnerAmEndeFailedModal');
 };
 
 const updateKostenAbzug = () => {
@@ -74,6 +95,8 @@ const updateEinwohner = () => {
     const add = (a, b) => a + b;
     state.overview.einwohner = anzahl.reduce(add);
     getEinwohner().innerHTML = `${state.overview.einwohner} / 10'000`;
+    einwohnerAmEndeSuccessModal().innerHTML = `${state.overview.einwohner} Einwohner`;
+    einwohnerAmEndeFailedModal().innerHTML = `${state.overview.einwohner} Einwohner`;
     checkIsFinished();
 };
 
