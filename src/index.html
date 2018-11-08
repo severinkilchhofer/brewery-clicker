@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/drop.css">
-    <link rel="stylesheet" type="text/css" href="css/monthCounter.css">
     <link rel="stylesheet" type="text/css" href="css/introModal.css">
     <link rel="stylesheet" type="text/css" href="css/stopwatch.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,900" rel="stylesheet">
@@ -16,14 +15,15 @@
 </div>
 <div class="background-container">
     <div class="container">
-        <div id="introModal" class="modal">
+         <div id="introModal" class="modal">
             <div class="modal-content">
-                <h1>Hallo Lieber Spielefreund</h1>
-                <h2>Locke 10'000 Einwohner in deine neue Stadt!</h2>
-                <p>Versuche so viele Einwohner wie möglich zu erhalten indem du Gebäude auf die Spielfläche ziehst.</p>
-                <p>Wichtig: Wenn du alle 16 Felder besetzt hast oder bereits vorher 10'000 Einwohner erreicht hast, ist
-                    das Spiel zu Ende.</p>
-                <a href="#" class="button" onClick="startGame()">Start</a>
+                <div class="modal-title">Hallo Lieber Spielefreund</div>
+                <p>Locke 10'000 Einwohner in deine neue Stadt und versuche dies, in möglichst kurzer Zeit zu tun!<br>
+                    Die Einwohner kommen in deine Stadt, wenn du Gebäude auf die Spielfläche ziehst.<br>
+                    Wichtig: Wenn du alle 16 Felder besetzt hast, ist das Spiel auch zu Ende.</p>
+              <div class="button-container">
+                <a class="button-design" onClick="startGame()"><span>Start Game</span></a>
+              </div>
             </div>
         </div>
         <div id="successModal" class="modal">
@@ -86,9 +86,6 @@
         <!--Behörde-->
         <div class="gebaudeCard" data-preis="0" data-id="20">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(20)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     0$
                 </div>
@@ -114,9 +111,6 @@
         <!--Cafe-->
         <div class="gebaudeCard" data-preis="400" data-id="21">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(21)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     400$
                 </div>
@@ -143,9 +137,6 @@
         <!--Wohnhaus-->
         <div class="gebaudeCard" data-preis="400" data-id="22">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(22)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     400$
                 </div>
@@ -171,9 +162,6 @@
         <!--Tante Emma Laden-->
         <div class="gebaudeCard" data-preis="500" data-id="23">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(23)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     500$
                 </div>
@@ -199,9 +187,6 @@
         <!--Apotheke-->
         <div class="gebaudeCard" data-preis="700" data-id="24">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(24)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     700$
                 </div>
@@ -227,9 +212,6 @@
         <!--Arztpraxis-->
         <div class="gebaudeCard" data-preis="1000" data-id="25">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(25)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     1000$
                 </div>
@@ -255,9 +237,6 @@
         <!--Buerogebaude-->
         <div class="gebaudeCard" data-preis="3000" data-id="26">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(26)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     3000$
                 </div>
@@ -283,9 +262,6 @@
         <!--Club-->
         <div class="gebaudeCard" data-preis="2500" data-id="27">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(27)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     2500$
                 </div>
@@ -311,9 +287,6 @@
         <!--Spital-->
         <div class="gebaudeCard" data-preis="5000" data-id="28">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(28)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     5000$
                 </div>
@@ -339,9 +312,6 @@
         <!--Bäckerei-->
         <div class="gebaudeCard" data-preis="10000" data-id="29">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(29)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     10000$
                 </div>
@@ -367,9 +337,6 @@
         <!--Altersheim-->
         <div class="gebaudeCard" data-preis="6000" data-id="30">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(30)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     6000$
                 </div>
@@ -395,9 +362,6 @@
         <!--Tankstelle-->
         <div class="gebaudeCard" data-preis="1000" data-id="31">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(31)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     1000$
                 </div>
@@ -423,9 +387,6 @@
         <!--Coiffeur-->
         <div class="gebaudeCard" data-preis="2000" data-id="32">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(32)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     2000$
                 </div>
@@ -451,9 +412,6 @@
         <!--Gefängnis-->
         <div class="gebaudeCard" data-preis="9000" data-id="33">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(33)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     9000$
                 </div>
@@ -479,9 +437,6 @@
         <!--Brauerei-->
         <div class="gebaudeCard" data-preis="3500" data-id="34">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(34)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     3500$
                 </div>
@@ -507,9 +462,6 @@
         <!--Bank-->
         <div class="gebaudeCard" data-preis="20000" data-id="35">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(35)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     20000$
                 </div>
@@ -535,9 +487,6 @@
         <!--Blumenladen-->
         <div class="gebaudeCard" data-preis="2800" data-id="36">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(36)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     2800$
                 </div>
@@ -563,9 +512,6 @@
         <!--Startup Büro-->
         <div class="gebaudeCard" data-preis="12000" data-id="37">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(37)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     12000$
                 </div>
@@ -591,9 +537,6 @@
         <!--Versicherung-->
         <div class="gebaudeCard" data-preis="30000" data-id="38">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(38)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     30000$
                 </div>
@@ -619,9 +562,6 @@
         <!--Kino-->
         <div class="gebaudeCard" data-preis="100000" data-id="39">
             <div class="cardHeaderContainer">
-                <div class="cardHeaderLeft">
-                    <button onclick="displayNone(39)">x</button>
-                </div>
                 <div class="cardHeaderRight">
                     100000$
                 </div>
@@ -648,7 +588,6 @@
 </div>
 
 <script src="js/app.js"></script>
-<!--<script src="js/monthCounter.js"></script>-->
 <script src="js/introModal.js"></script>
 <script src="js/successModal.js"></script>
 <script src="js/failedModal.js"></script>

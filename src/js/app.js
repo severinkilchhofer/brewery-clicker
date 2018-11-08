@@ -22,6 +22,7 @@ const state = {
     gamePlay: {
         gebaudeAufLand: 0,
         finished: false,
+        droppedElementId: 0
     }
 
 };
@@ -46,19 +47,17 @@ const updateKostenAbzug = () => {
 
 const updateGesamtesGeld = () => {
     if (!state.interval.currentInterval) {
-        setInterval(function () {
+        const interval = setInterval(function () {
             let geld = state.overview.geld;
             geld += state.overview.mieteinnahmen;
             state.overview.geld = geld;
             state.interval.currentInterval = true;
             updateGebaudeCards();
             getMieteinnahmen().innerHTML = `${geld}$`;
-            if (!state.interval.counterInterval) {
-                monthCountup();
-                state.interval.counterInterval = true;
+            if (state.gamePlay.finished) {
+               clearInterval(interval);
             }
         }, 3000);
-        // }, 5000);
     }
 };
 
@@ -117,7 +116,7 @@ const displayNone = (selectedId) => {
 
         const element = +item.dataset.id;
 
-        if (selectedId === element) {
+        if (+selectedId === element) {
             item.classList.add('displayNone');
         }
     }

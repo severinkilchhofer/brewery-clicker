@@ -13,7 +13,6 @@ class Stopwatch {
     }
 
     start() {
-        console.warn('start')
         if (!this.time) this.time = performance.now();
         if (!this.running) {
             this.running = true;
