@@ -20,6 +20,7 @@
     padding: 20px;
     border: 1px solid #888;
     width: 40%;
+    text-align: center;
 }
 
 /* The Close Button */
@@ -38,10 +39,28 @@
 }
 
 .modal-title {
-  font-size: 2em;
-  font-weight: 900;
+  font-size: 2.5em;
+  font-weight: 700;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+.stopwatch2 {
+    font-size: 2em;
+}
+
+.stopwatch3 {
+    font-size: 2em;
+}
+
+.einwohner-anzahl {
+    font-size: 2em;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 100;
 }
 
 .button-design span {
@@ -57,7 +76,6 @@
   background-image: linear-gradient(#008752, #007849);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  text-shadow: 0 -1px 1px rgba(7, 51, 34, 0.8);
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;

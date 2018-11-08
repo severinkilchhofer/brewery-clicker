@@ -11,56 +11,74 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,900" rel="stylesheet">
 </head>
 <body>
-<div class="overview--item">
-</div>
 <div class="background-container">
     <div class="container">
-         <div id="introModal" class="modal">
+        <div id="introModal" class="modal" style="display: none">
             <div class="modal-content">
-                <div class="modal-title">Hallo Lieber Spielefreund</div>
-                <p>Locke 10'000 Einwohner in deine neue Stadt und versuche dies, in möglichst kurzer Zeit zu tun!<br>
-                    Die Einwohner kommen in deine Stadt, wenn du Gebäude auf die Spielfläche ziehst.<br>
-                    Wichtig: Wenn du alle 16 Felder besetzt hast, ist das Spiel auch zu Ende.</p>
-              <div class="button-container">
-                <a class="button-design" onClick="startGame()"><span>Start Game</span></a>
-              </div>
+                <div class="modal-title">Grüessech</div>
+                <p>Locke 10'000 Einwohner in deine neue Stadt. Natürlich in möglichst kurzer Zeit!<br>
+                    Die Einwohner kommen in deine Stadt, wenn du Gebäude auf die Spielfläche ziehst.</p>
+                <p style="font-weight: 400">Wichtig: Wenn du alle 16 Felder besetzt hast, ist das Spiel ebenfalls zu Ende.</p>
+                <div class="button-container">
+                    <a class="button-design" onClick="startGame()"><span>Start Game</span></a>
+                </div>
             </div>
         </div>
         <div id="successModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h1>Geschafft!!</h1>
-                <h2>Du hast es geschafft! In deiner Stadt darfst du 10'000 Menschen begrüssen!</h2>
+                <div class="modal-title">Herzlichen Glückwunsch!</div>
+                <p>Du hast es geschafft! Deine Stadt zählt nun:</p>
+                <div class="einwohner-anzahl" id="einwohnerAmEndeSuccessModal"></div>
+                <p>Für diese grandiose Leistung hast du so lange gebraucht:</p>
                 <div class="stopwatch2"></div>
                 <ul class="results2"></ul>
+                <div class="button-container">
+                    <a class="button-design" onClick="retry()"><span>Erneut Spielen</span></a>
+                </div>
             </div>
         </div>
-
         <div id="failedModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h1>FAILED!!</h1>
-                <h2>Leider hast du zu wenige Leute in deine Stadt locken können. Versuche deine Stadt das nächste Mal
-                    attraktiver zu gestalten.</h2>
+                <div class="modal-title">Leider Nein!</div>
+                <p>Du hast nicht genügend Einwohner erwerben können. Deine Stadt zählt nun:</p>
+                <div class="einwohner-anzahl" id="einwohnerAmEndeFailedModal"></div>
+                <p>Für deine miese Leistung hast du so lange gebraucht:</p>
                 <div class="stopwatch3"></div>
                 <ul class="results3"></ul>
+                <div class="button-container">
+                    <a class="button-design" onClick="retry()"><span>Erneut Spielen</span></a>
+                </div>
             </div>
         </div>
 
-        <div class="overview">
-            <div class="overview--item">
-                <div class="label">Einwohner</div>
-                <div class="value" id="einwohnerCounter"></div>
-            </div>
-            <div class="overview--item">
-                <div class="label">Mieteinnahmen</div>
-                <div class="value" id="mieteinnahmenCounter"></div>
-            </div>
-            <div class="overview--item">
-                <div class="stopwatch"></div>
-                <ul class="results"></ul>
+        <div class="overview-container">
+            <div class="overview-left">
+                <div class="overview--item">
+                    <div class="label">Einwohner</div>
+                    <div class="value" id="einwohnerCounter"></div>
+                </div>
+                <div class="overview--item">
+                    <div class="label">Mieteinnahmen</div>
+                    <div class="value" id="mieteinnahmenCounter"></div>
+                </div>
             </div>
 
+            <div class="overview-right">
+                <div class="overview--item">
+                    <div class="logo-header">City Builder</div>
+                </div>
+
+                <div class="overview--item">
+                    <div class="label">Zeit</div>
+
+                    <div style="width: 200px">
+                        <div class="stopwatch"></div>
+                        <ul class="results"></ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="big" id="land">
             <div class="field rowA colA holder" data-id="0"></div>
@@ -108,7 +126,7 @@
             </div>
         </div>
 
-        <!--Cafe-->
+        <!--Café-->
         <div class="gebaudeCard" data-preis="400" data-id="21">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderRight">
@@ -128,7 +146,7 @@
                 </div>
             </div>
             <div class="gebaudeBeschreibung">
-                <h1>Cafe</h1>
+                <h1>Café</h1>
                 <h2>Einwohner: +380</h2>
                 <h2>Mieteinnahmen: 200$</h2>
             </div>
@@ -234,7 +252,7 @@
             </div>
         </div>
 
-        <!--Buerogebaude-->
+        <!--Bürogebäude-->
         <div class="gebaudeCard" data-preis="3000" data-id="26">
             <div class="cardHeaderContainer">
                 <div class="cardHeaderRight">
@@ -253,7 +271,7 @@
                      data-id="26"></div>
             </div>
             <div class="gebaudeBeschreibung">
-                <h1>Bürogebaude</h1>
+                <h1>Bürogebäude</h1>
                 <h2>Einwohner: +500</h2>
                 <h2>Mieteinnahmen: 450$</h2>
             </div>
@@ -592,7 +610,6 @@
 <script src="js/successModal.js"></script>
 <script src="js/failedModal.js"></script>
 <script src="js/drop.js"></script>
-<script src="js/scores.js"></script>
 <script src="js/stopwatch.js"></script>
 
 </body>

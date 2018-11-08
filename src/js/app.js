@@ -35,6 +35,14 @@ const getEinwohner = () => {
     return $('#einwohnerCounter');
 };
 
+const einwohnerAmEndeSuccessModal = () => {
+    return $('#einwohnerAmEndeSuccessModal');
+};
+
+const einwohnerAmEndeFailedModal = () => {
+    return $('#einwohnerAmEndeFailedModal');
+};
+
 const updateKostenAbzug = () => {
     const lastAddedGebaude = state.land.map(item => +item.kosten);
     const kostenLastAdded = lastAddedGebaude.pop();
@@ -74,6 +82,8 @@ const updateEinwohner = () => {
     const add = (a, b) => a + b;
     state.overview.einwohner = anzahl.reduce(add);
     getEinwohner().innerHTML = `${state.overview.einwohner} / 10'000`;
+    einwohnerAmEndeSuccessModal().innerHTML = `${state.overview.einwohner} Einwohner`;
+    einwohnerAmEndeFailedModal().innerHTML = `${state.overview.einwohner} Einwohner`;
     checkIsFinished();
 };
 
