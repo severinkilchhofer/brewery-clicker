@@ -18,9 +18,10 @@ class App {
         }
     }
 
-    static dragstart() {
+    static dragstart() 
         this.className += " held";
         App.currentBox = App.boxes.find(box => box.id === this.id);
+        state.gamePlay.droppedElementId = App.currentBox.dataset.id;
         setTimeout(() => this.className = "invisible", 0);
         const currentElement = state.land.findIndex(entry => entry.id == this.parentElement.dataset.id);
         if (currentElement > -1) {
@@ -46,6 +47,7 @@ class App {
     }
 
     static drop() {
+        displayNone(state.gamePlay.droppedElementId);
         this.className += "holder";
         this.append(App.currentBox);
 
