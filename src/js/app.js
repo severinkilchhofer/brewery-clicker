@@ -94,7 +94,7 @@ const updateEinwohner = () => {
     const anzahl = state.land.map(item => +item.einwohner);
     const add = (a, b) => a + b;
     state.overview.einwohner = anzahl.reduce(add);
-    getEinwohner().innerHTML = `${state.overview.einwohner} / 10'000`;
+    getEinwohner().innerHTML = `${state.overview.einwohner} / 10&thinsp;000`;
     einwohnerAmEndeSuccessModal().innerHTML = `${state.overview.einwohner} Einwohner`;
     einwohnerAmEndeFailedModal().innerHTML = `${state.overview.einwohner} Einwohner`;
     checkIsFinished();
